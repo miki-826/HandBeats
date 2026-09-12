@@ -1,0 +1,29 @@
+{
+  "id": "song-01",
+  "title": "靴ひもを結ぶ朝",
+  "artist": "Hand Beat Originals",
+  "bpm": 95,
+  "durationMs": 174266,
+  "audio": "/assets/songs/song-01/audio.m4a",
+  "jacket": "/assets/songs/song-01/jacket.webp",
+  "previewStartMs": 24000,
+  "color": "#e9ad78",
+  "mood": "朝の一歩を、軽やかなリズムに。",
+  "difficulties": {
+    "easy": {
+      "level": 2,
+      "chartVersion": 1,
+      "noteCount": 121
+    },
+    "normal": {
+      "level": 4,
+      "chartVersion": 1,
+      "noteCount": 257
+    },
+    "hard": {
+      "level": 7,
+      "chartVersion": 1,
+      "noteCount": 298
+    }
+  }
+}

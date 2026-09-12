@@ -1,0 +1,9 @@
+node_modules
+.next
+資料
+public/mediapipe
+src/data
+docs/audio-analysis.json
+.analysis
+.tools
+package-lock.json

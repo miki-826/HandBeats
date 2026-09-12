@@ -1,0 +1,2502 @@
+{
+  "songId": "song-02",
+  "difficulty": "hard",
+  "chartVersion": 1,
+  "level": 8,
+  "durationMs": 157989,
+  "offsetMs": 0,
+  "notes": [
+    {
+      "id": "n0001",
+      "timeMs": 2902,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0002",
+      "timeMs": 3852,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0003",
+      "timeMs": 4792,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0004",
+      "timeMs": 5742,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0005",
+      "timeMs": 6682,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0006",
+      "timeMs": 7632,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0007",
+      "timeMs": 8582,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0008",
+      "timeMs": 9522,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0009",
+      "timeMs": 10462,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0010",
+      "timeMs": 11412,
+      "gesture": "open",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0011",
+      "timeMs": 12362,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0012",
+      "timeMs": 13302,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0013",
+      "timeMs": 14232,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0014",
+      "timeMs": 15192,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0015",
+      "timeMs": 16132,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0016",
+      "timeMs": 16612,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0017",
+      "timeMs": 17082,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0018",
+      "timeMs": 17552,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0019",
+      "timeMs": 18022,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0020",
+      "timeMs": 18502,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0021",
+      "timeMs": 18972,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0022",
+      "timeMs": 19442,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0023",
+      "timeMs": 19912,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0024",
+      "timeMs": 20392,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0025",
+      "timeMs": 20862,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0026",
+      "timeMs": 21332,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0027",
+      "timeMs": 21802,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0028",
+      "timeMs": 22282,
+      "gesture": "open",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0029",
+      "timeMs": 22752,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0030",
+      "timeMs": 23222,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0031",
+      "timeMs": 23692,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0032",
+      "timeMs": 24172,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0033",
+      "timeMs": 24642,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0034",
+      "timeMs": 25112,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0035",
+      "timeMs": 25582,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0036",
+      "timeMs": 26062,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0037",
+      "timeMs": 26532,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0038",
+      "timeMs": 27002,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0039",
+      "timeMs": 27472,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0040",
+      "timeMs": 27952,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0041",
+      "timeMs": 28422,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0042",
+      "timeMs": 28892,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0043",
+      "timeMs": 29362,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0044",
+      "timeMs": 29838,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0045",
+      "timeMs": 30312,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0046",
+      "timeMs": 30782,
+      "gesture": "open",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0047",
+      "timeMs": 31262,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0048",
+      "timeMs": 31732,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0049",
+      "timeMs": 32202,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0050",
+      "timeMs": 32672,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0051",
+      "timeMs": 33142,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0052",
+      "timeMs": 33382,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0053",
+      "timeMs": 33622,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0054",
+      "timeMs": 33862,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0055",
+      "timeMs": 34092,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0056",
+      "timeMs": 34562,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0057",
+      "timeMs": 35042,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0058",
+      "timeMs": 35272,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0059",
+      "timeMs": 35502,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0060",
+      "timeMs": 35752,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0061",
+      "timeMs": 35982,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0062",
+      "timeMs": 36442,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0063",
+      "timeMs": 36932,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0064",
+      "timeMs": 37162,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0065",
+      "timeMs": 37392,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0066",
+      "timeMs": 37642,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0067",
+      "timeMs": 37872,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0068",
+      "timeMs": 38342,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0069",
+      "timeMs": 38812,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0070",
+      "timeMs": 39052,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0071",
+      "timeMs": 39282,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0072",
+      "timeMs": 39522,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0073",
+      "timeMs": 39762,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0074",
+      "timeMs": 40232,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0075",
+      "timeMs": 40702,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0076",
+      "timeMs": 40942,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0077",
+      "timeMs": 41172,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0078",
+      "timeMs": 41422,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0079",
+      "timeMs": 41652,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0080",
+      "timeMs": 42122,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0081",
+      "timeMs": 42592,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0082",
+      "timeMs": 42832,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0083",
+      "timeMs": 43062,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0084",
+      "timeMs": 43302,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0085",
+      "timeMs": 43542,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0086",
+      "timeMs": 44012,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0087",
+      "timeMs": 44482,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0088",
+      "timeMs": 44722,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0089",
+      "timeMs": 44952,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0090",
+      "timeMs": 45202,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0091",
+      "timeMs": 45432,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0092",
+      "timeMs": 45902,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0093",
+      "timeMs": 46372,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0094",
+      "timeMs": 46612,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0095",
+      "timeMs": 46842,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0096",
+      "timeMs": 47082,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0097",
+      "timeMs": 47322,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0098",
+      "timeMs": 47792,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0099",
+      "timeMs": 48272,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0100",
+      "timeMs": 48502,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0101",
+      "timeMs": 48742,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0102",
+      "timeMs": 48972,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0103",
+      "timeMs": 49212,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0104",
+      "timeMs": 49682,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0105",
+      "timeMs": 50162,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0106",
+      "timeMs": 50402,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0107",
+      "timeMs": 50622,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0108",
+      "timeMs": 50872,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0109",
+      "timeMs": 51102,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0110",
+      "timeMs": 51570,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0111",
+      "timeMs": 52042,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0112",
+      "timeMs": 52322,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0113",
+      "timeMs": 52522,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0114",
+      "timeMs": 52751,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0115",
+      "timeMs": 52992,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0116",
+      "timeMs": 53462,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0117",
+      "timeMs": 53932,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0118",
+      "timeMs": 54172,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0119",
+      "timeMs": 54402,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0120",
+      "timeMs": 54652,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0121",
+      "timeMs": 54882,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0122",
+      "timeMs": 55350,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0123",
+      "timeMs": 55832,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0124",
+      "timeMs": 56058,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0125",
+      "timeMs": 56302,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0126",
+      "timeMs": 56762,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0127",
+      "timeMs": 57242,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0128",
+      "timeMs": 57712,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0129",
+      "timeMs": 58182,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0130",
+      "timeMs": 58662,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0131",
+      "timeMs": 59132,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0132",
+      "timeMs": 59602,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0133",
+      "timeMs": 60072,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0134",
+      "timeMs": 60552,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0135",
+      "timeMs": 61022,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0136",
+      "timeMs": 61492,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0137",
+      "timeMs": 61962,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0138",
+      "timeMs": 62432,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0139",
+      "timeMs": 62912,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0140",
+      "timeMs": 63382,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0141",
+      "timeMs": 63852,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0142",
+      "timeMs": 64322,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0143",
+      "timeMs": 64802,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0144",
+      "timeMs": 65272,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0145",
+      "timeMs": 65742,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0146",
+      "timeMs": 66212,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0147",
+      "timeMs": 66682,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0148",
+      "timeMs": 67162,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0149",
+      "timeMs": 67632,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0150",
+      "timeMs": 68102,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0151",
+      "timeMs": 68582,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0152",
+      "timeMs": 69052,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0153",
+      "timeMs": 69522,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0154",
+      "timeMs": 70002,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0155",
+      "timeMs": 70468,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0156",
+      "timeMs": 70942,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0157",
+      "timeMs": 71412,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0158",
+      "timeMs": 71882,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0159",
+      "timeMs": 72342,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0160",
+      "timeMs": 72832,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0161",
+      "timeMs": 73302,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0162",
+      "timeMs": 73772,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0163",
+      "timeMs": 74242,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0164",
+      "timeMs": 74722,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0165",
+      "timeMs": 75192,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0166",
+      "timeMs": 75662,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0167",
+      "timeMs": 76132,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0168",
+      "timeMs": 76612,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0169",
+      "timeMs": 77082,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0170",
+      "timeMs": 77552,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0171",
+      "timeMs": 78032,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0172",
+      "timeMs": 78502,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0173",
+      "timeMs": 78972,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0174",
+      "timeMs": 79442,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0175",
+      "timeMs": 79922,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0176",
+      "timeMs": 80392,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0177",
+      "timeMs": 80862,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0178",
+      "timeMs": 81332,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0179",
+      "timeMs": 81802,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0180",
+      "timeMs": 82282,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0181",
+      "timeMs": 82752,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0182",
+      "timeMs": 83222,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0183",
+      "timeMs": 83692,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0184",
+      "timeMs": 84172,
+      "gesture": "open",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0185",
+      "timeMs": 84642,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0186",
+      "timeMs": 85112,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0187",
+      "timeMs": 85582,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0188",
+      "timeMs": 86058,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0189",
+      "timeMs": 86532,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0190",
+      "timeMs": 87012,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0191",
+      "timeMs": 87502,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0192",
+      "timeMs": 87952,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0193",
+      "timeMs": 88892,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0194",
+      "timeMs": 89852,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0195",
+      "timeMs": 90792,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0196",
+      "timeMs": 91732,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0197",
+      "timeMs": 92672,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0198",
+      "timeMs": 93622,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0199",
+      "timeMs": 94562,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0200",
+      "timeMs": 95502,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0201",
+      "timeMs": 96452,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0202",
+      "timeMs": 96912,
+      "gesture": "open",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0203",
+      "timeMs": 97402,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0204",
+      "timeMs": 97872,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0205",
+      "timeMs": 98342,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0206",
+      "timeMs": 98822,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0207",
+      "timeMs": 99292,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0208",
+      "timeMs": 99762,
+      "gesture": "open",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0209",
+      "timeMs": 100232,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0210",
+      "timeMs": 100702,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0211",
+      "timeMs": 101172,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0212",
+      "timeMs": 101632,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0213",
+      "timeMs": 102122,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0214",
+      "timeMs": 102602,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0215",
+      "timeMs": 103072,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0216",
+      "timeMs": 103542,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0217",
+      "timeMs": 104012,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0218",
+      "timeMs": 104482,
+      "gesture": "fist",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0219",
+      "timeMs": 104952,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0220",
+      "timeMs": 105202,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0221",
+      "timeMs": 105432,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0222",
+      "timeMs": 105672,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0223",
+      "timeMs": 105902,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0224",
+      "timeMs": 106382,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0225",
+      "timeMs": 106842,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0226",
+      "timeMs": 107092,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0227",
+      "timeMs": 107322,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0228",
+      "timeMs": 107562,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0229",
+      "timeMs": 107792,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0230",
+      "timeMs": 108272,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0231",
+      "timeMs": 108742,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0232",
+      "timeMs": 108982,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0233",
+      "timeMs": 109212,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0234",
+      "timeMs": 109452,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0235",
+      "timeMs": 109682,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0236",
+      "timeMs": 110152,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0237",
+      "timeMs": 110622,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0238",
+      "timeMs": 110862,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0239",
+      "timeMs": 111102,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0240",
+      "timeMs": 111342,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0241",
+      "timeMs": 111572,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0242",
+      "timeMs": 112042,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0243",
+      "timeMs": 112512,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0244",
+      "timeMs": 112762,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0245",
+      "timeMs": 112992,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0246",
+      "timeMs": 113232,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0247",
+      "timeMs": 113462,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0248",
+      "timeMs": 113932,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0249",
+      "timeMs": 114402,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0250",
+      "timeMs": 114642,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0251",
+      "timeMs": 114872,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0252",
+      "timeMs": 115122,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0253",
+      "timeMs": 115352,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0254",
+      "timeMs": 115822,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0255",
+      "timeMs": 116292,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0256",
+      "timeMs": 116532,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0257",
+      "timeMs": 116772,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0258",
+      "timeMs": 117012,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0259",
+      "timeMs": 117242,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0260",
+      "timeMs": 117712,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0261",
+      "timeMs": 118182,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0262",
+      "timeMs": 118422,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0263",
+      "timeMs": 118652,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0264",
+      "timeMs": 118902,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0265",
+      "timeMs": 119132,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0266",
+      "timeMs": 119602,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0267",
+      "timeMs": 120072,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0268",
+      "timeMs": 120312,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0269",
+      "timeMs": 120552,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0270",
+      "timeMs": 120792,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0271",
+      "timeMs": 121022,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0272",
+      "timeMs": 121492,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0273",
+      "timeMs": 121962,
+      "gesture": "gun",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0274",
+      "timeMs": 122202,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0275",
+      "timeMs": 122432,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0276",
+      "timeMs": 122682,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0277",
+      "timeMs": 122912,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0278",
+      "timeMs": 123382,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0279",
+      "timeMs": 123852,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0280",
+      "timeMs": 124092,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0281",
+      "timeMs": 124332,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0282",
+      "timeMs": 124802,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0283",
+      "timeMs": 125272,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0284",
+      "timeMs": 125752,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0285",
+      "timeMs": 126212,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0286",
+      "timeMs": 126692,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0287",
+      "timeMs": 127182,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0288",
+      "timeMs": 127642,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0289",
+      "timeMs": 128112,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0290",
+      "timeMs": 128582,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0291",
+      "timeMs": 129062,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0292",
+      "timeMs": 129522,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0293",
+      "timeMs": 130002,
+      "gesture": "open",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0294",
+      "timeMs": 130472,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0295",
+      "timeMs": 130942,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0296",
+      "timeMs": 131412,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0297",
+      "timeMs": 131882,
+      "gesture": "open",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0298",
+      "timeMs": 132362,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0299",
+      "timeMs": 132832,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0300",
+      "timeMs": 133302,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0301",
+      "timeMs": 133542,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0302",
+      "timeMs": 133772,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0303",
+      "timeMs": 134022,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0304",
+      "timeMs": 134242,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0305",
+      "timeMs": 134722,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0306",
+      "timeMs": 135192,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0307",
+      "timeMs": 135432,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0308",
+      "timeMs": 135672,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0309",
+      "timeMs": 135902,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0310",
+      "timeMs": 136142,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0311",
+      "timeMs": 136612,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0312",
+      "timeMs": 137082,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0313",
+      "timeMs": 137322,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0314",
+      "timeMs": 137562,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0315",
+      "timeMs": 137792,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0316",
+      "timeMs": 138022,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0317",
+      "timeMs": 138502,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0318",
+      "timeMs": 138972,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0319",
+      "timeMs": 139212,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0320",
+      "timeMs": 139442,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0321",
+      "timeMs": 139682,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0322",
+      "timeMs": 139922,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0323",
+      "timeMs": 140392,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0324",
+      "timeMs": 140862,
+      "gesture": "fist",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0325",
+      "timeMs": 141102,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0326",
+      "timeMs": 141332,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0327",
+      "timeMs": 141572,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0328",
+      "timeMs": 141802,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0329",
+      "timeMs": 142282,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0330",
+      "timeMs": 142762,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0331",
+      "timeMs": 142992,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0332",
+      "timeMs": 143222,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0333",
+      "timeMs": 143460,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0334",
+      "timeMs": 143696,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0335",
+      "timeMs": 144162,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0336",
+      "timeMs": 144642,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0337",
+      "timeMs": 144882,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0338",
+      "timeMs": 145112,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0339",
+      "timeMs": 145362,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0340",
+      "timeMs": 145592,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0341",
+      "timeMs": 146062,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0342",
+      "timeMs": 146532,
+      "gesture": "clap",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0343",
+      "timeMs": 146782,
+      "gesture": "open",
+      "x": 0.5,
+      "y": 0.53
+    },
+    {
+      "id": "n0344",
+      "timeMs": 147002,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0345",
+      "timeMs": 147252,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0346",
+      "timeMs": 147482,
+      "gesture": "fist",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0347",
+      "timeMs": 147962,
+      "gesture": "gun",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0348",
+      "timeMs": 148432,
+      "gesture": "open",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0349",
+      "timeMs": 149362,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0350",
+      "timeMs": 150312,
+      "gesture": "open",
+      "x": 0.77,
+      "y": 0.35
+    },
+    {
+      "id": "n0351",
+      "timeMs": 151252,
+      "gesture": "fist",
+      "x": 0.31,
+      "y": 0.29
+    },
+    {
+      "id": "n0352",
+      "timeMs": 152202,
+      "gesture": "gun",
+      "x": 0.69,
+      "y": 0.65
+    },
+    {
+      "id": "n0353",
+      "timeMs": 153142,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.36
+    },
+    {
+      "id": "n0354",
+      "timeMs": 154092,
+      "gesture": "gun",
+      "x": 0.76,
+      "y": 0.58
+    },
+    {
+      "id": "n0355",
+      "timeMs": 155035,
+      "gesture": "fist",
+      "x": 0.23,
+      "y": 0.57
+    },
+    {
+      "id": "n0356",
+      "timeMs": 155962,
+      "gesture": "gun",
+      "x": 0.77,
+      "y": 0.35
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "song-04",
+  "title": "これが私だ",
+  "artist": "Hand Beat Originals",
+  "bpm": 172,
+  "durationMs": 154320,
+  "audio": "/assets/songs/song-04/audio.m4a",
+  "jacket": "/assets/songs/song-04/jacket.webp",
+  "previewStartMs": 32000,
+  "color": "#e998ab",
+  "mood": "自分らしさを鳴らす、力強いビート。",
+  "difficulties": {
+    "easy": {
+      "level": 3,
+      "chartVersion": 1,
+      "noteCount": 193
+    },
+    "normal": {
+      "level": 6,
+      "chartVersion": 1,
+      "noteCount": 300
+    },
+    "hard": {
+      "level": 9,
+      "chartVersion": 1,
+      "noteCount": 383
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "1": {
+    "perfectMs": 80,
+    "greatMs": 150,
+    "goodMs": 250,
+    "radius": { "easy": 0.18, "normal": 0.145, "hard": 0.12 },
+    "points": { "perfect": 1000, "great": 700, "good": 300, "miss": 0 }
+  }
+}

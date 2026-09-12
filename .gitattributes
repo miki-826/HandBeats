@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.mp4 binary
+*.m4a binary
+*.task binary
+*.wasm binary
+*.webp binary
+*.png binary
+仕様書.md -text

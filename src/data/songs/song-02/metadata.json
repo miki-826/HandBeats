@@ -1,0 +1,29 @@
+{
+  "id": "song-02",
+  "title": "ワン・ツー・スリーで笑顔満開！",
+  "artist": "Hand Beat Originals",
+  "bpm": 127,
+  "durationMs": 157989,
+  "audio": "/assets/songs/song-02/audio.m4a",
+  "jacket": "/assets/songs/song-02/jacket.webp",
+  "previewStartMs": 32000,
+  "color": "#d7ed80",
+  "mood": "はじけるビート。手拍子で笑顔満開。",
+  "difficulties": {
+    "easy": {
+      "level": 3,
+      "chartVersion": 1,
+      "noteCount": 147
+    },
+    "normal": {
+      "level": 6,
+      "chartVersion": 1,
+      "noteCount": 311
+    },
+    "hard": {
+      "level": 8,
+      "chartVersion": 1,
+      "noteCount": 356
+    }
+  }
+}

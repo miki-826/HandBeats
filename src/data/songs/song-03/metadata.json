@@ -1,0 +1,29 @@
+{
+  "id": "song-03",
+  "title": "ゆっくりでいい",
+  "artist": "Hand Beat Originals",
+  "bpm": 72,
+  "durationMs": 172989,
+  "audio": "/assets/songs/song-03/audio.m4a",
+  "jacket": "/assets/songs/song-03/jacket.webp",
+  "previewStartMs": 52000,
+  "color": "#9dbbea",
+  "mood": "深呼吸するように、ゆったり刻もう。",
+  "difficulties": {
+    "easy": {
+      "level": 1,
+      "chartVersion": 1,
+      "noteCount": 91
+    },
+    "normal": {
+      "level": 3,
+      "chartVersion": 1,
+      "noteCount": 190
+    },
+    "hard": {
+      "level": 6,
+      "chartVersion": 1,
+      "noteCount": 219
+    }
+  }
+}

@@ -1,0 +1,1325 @@
+[
+  {
+    "id": "song-01",
+    "title": "靴ひもを結ぶ朝",
+    "source": "資料\\music\\靴ひもを結ぶ朝.mp4",
+    "sourceSha256": "5e8fc39a4e511dccb45c53dcd2644b64bec0554deb0a109bc51f8ee63499c0fb",
+    "durationMs": 174266,
+    "tempoCandidates": [
+      {
+        "bpm": 95.0,
+        "phaseMs": 79,
+        "strength": 0.33812
+      },
+      {
+        "bpm": 76.0,
+        "phaseMs": 395,
+        "strength": 0.16761
+      },
+      {
+        "bpm": 142.5,
+        "phaseMs": 285,
+        "strength": 0.14648
+      },
+      {
+        "bpm": 126.7,
+        "phaseMs": 252,
+        "strength": 0.117
+      },
+      {
+        "bpm": 114.0,
+        "phaseMs": 395,
+        "strength": 0.09794
+      },
+      {
+        "bpm": 152.0,
+        "phaseMs": 0,
+        "strength": 0.08471
+      }
+    ],
+    "energyWindows": [
+      {
+        "startMs": 0,
+        "rms": 0.074,
+        "onset": 0.0157
+      },
+      {
+        "startMs": 4000,
+        "rms": 0.069,
+        "onset": 0.0162
+      },
+      {
+        "startMs": 8000,
+        "rms": 0.1992,
+        "onset": 0.0316
+      },
+      {
+        "startMs": 12000,
+        "rms": 0.2658,
+        "onset": 0.0394
+      },
+      {
+        "startMs": 16000,
+        "rms": 0.2592,
+        "onset": 0.0392
+      },
+      {
+        "startMs": 20000,
+        "rms": 0.2551,
+        "onset": 0.0322
+      },
+      {
+        "startMs": 24000,
+        "rms": 0.2752,
+        "onset": 0.0355
+      },
+      {
+        "startMs": 28000,
+        "rms": 0.2723,
+        "onset": 0.0346
+      },
+      {
+        "startMs": 32000,
+        "rms": 0.2661,
+        "onset": 0.0312
+      },
+      {
+        "startMs": 36000,
+        "rms": 0.2659,
+        "onset": 0.0364
+      },
+      {
+        "startMs": 40000,
+        "rms": 0.273,
+        "onset": 0.033
+      },
+      {
+        "startMs": 44000,
+        "rms": 0.2173,
+        "onset": 0.0234
+      },
+      {
+        "startMs": 48000,
+        "rms": 0.2151,
+        "onset": 0.0194
+      },
+      {
+        "startMs": 52000,
+        "rms": 0.3192,
+        "onset": 0.0306
+      },
+      {
+        "startMs": 56000,
+        "rms": 0.3264,
+        "onset": 0.0273
+      },
+      {
+        "startMs": 60000,
+        "rms": 0.3292,
+        "onset": 0.0265
+      },
+      {
+        "startMs": 64000,
+        "rms": 0.329,
+        "onset": 0.0283
+      },
+      {
+        "startMs": 68000,
+        "rms": 0.2565,
+        "onset": 0.0243
+      },
+      {
+        "startMs": 72000,
+        "rms": 0.2507,
+        "onset": 0.037
+      },
+      {
+        "startMs": 76000,
+        "rms": 0.2612,
+        "onset": 0.037
+      },
+      {
+        "startMs": 80000,
+        "rms": 0.2668,
+        "onset": 0.0315
+      },
+      {
+        "startMs": 84000,
+        "rms": 0.2623,
+        "onset": 0.0385
+      },
+      {
+        "startMs": 88000,
+        "rms": 0.2736,
+        "onset": 0.0325
+      },
+      {
+        "startMs": 92000,
+        "rms": 0.2795,
+        "onset": 0.0288
+      },
+      {
+        "startMs": 96000,
+        "rms": 0.2802,
+        "onset": 0.0295
+      },
+      {
+        "startMs": 100000,
+        "rms": 0.2632,
+        "onset": 0.0189
+      },
+      {
+        "startMs": 104000,
+        "rms": 0.3145,
+        "onset": 0.0243
+      },
+      {
+        "startMs": 108000,
+        "rms": 0.3225,
+        "onset": 0.0267
+      },
+      {
+        "startMs": 112000,
+        "rms": 0.3274,
+        "onset": 0.0209
+      },
+      {
+        "startMs": 116000,
+        "rms": 0.3155,
+        "onset": 0.0248
+      },
+      {
+        "startMs": 120000,
+        "rms": 0.3469,
+        "onset": 0.0272
+      },
+      {
+        "startMs": 124000,
+        "rms": 0.2902,
+        "onset": 0.0259
+      },
+      {
+        "startMs": 128000,
+        "rms": 0.3029,
+        "onset": 0.0284
+      },
+      {
+        "startMs": 132000,
+        "rms": 0.1992,
+        "onset": 0.0192
+      },
+      {
+        "startMs": 136000,
+        "rms": 0.0804,
+        "onset": 0.02
+      },
+      {
+        "startMs": 140000,
+        "rms": 0.0654,
+        "onset": 0.02
+      },
+      {
+        "startMs": 144000,
+        "rms": 0.1214,
+        "onset": 0.0178
+      },
+      {
+        "startMs": 148000,
+        "rms": 0.1323,
+        "onset": 0.0227
+      },
+      {
+        "startMs": 152000,
+        "rms": 0.257,
+        "onset": 0.0182
+      },
+      {
+        "startMs": 156000,
+        "rms": 0.3313,
+        "onset": 0.0258
+      },
+      {
+        "startMs": 160000,
+        "rms": 0.3354,
+        "onset": 0.026
+      },
+      {
+        "startMs": 164000,
+        "rms": 0.3226,
+        "onset": 0.0222
+      },
+      {
+        "startMs": 168000,
+        "rms": 0.203,
+        "onset": 0.0146
+      },
+      {
+        "startMs": 172000,
+        "rms": 0.0,
+        "onset": 0.0
+      }
+    ],
+    "selectedBpm": 95,
+    "gridPhaseMs": 79,
+    "sections": [
+      {
+        "startMs": 0,
+        "endMs": 12000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 12000,
+        "endMs": 24000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 24000,
+        "endMs": 28000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 28000,
+        "endMs": 52000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 52000,
+        "endMs": 68000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 68000,
+        "endMs": 92000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 92000,
+        "endMs": 100000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 100000,
+        "endMs": 104000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 104000,
+        "endMs": 132000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 132000,
+        "endMs": 152000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 152000,
+        "endMs": 156000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 156000,
+        "endMs": 168000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 168000,
+        "endMs": 174266,
+        "kind": "quiet"
+      }
+    ],
+    "charts": {
+      "easy": {
+        "level": 2,
+        "chartVersion": 1,
+        "noteCount": 121
+      },
+      "normal": {
+        "level": 4,
+        "chartVersion": 1,
+        "noteCount": 257
+      },
+      "hard": {
+        "level": 7,
+        "chartVersion": 1,
+        "noteCount": 298
+      }
+    }
+  },
+  {
+    "id": "song-02",
+    "title": "ワン・ツー・スリーで笑顔満開！",
+    "source": "資料\\music\\ワン・ツー・スリーで笑顔満開！.mp4",
+    "sourceSha256": "ec46d82e08f3c73dbad9df80b5385a9bb7dbc5c0772d0da84b77ef906704b521",
+    "durationMs": 157989,
+    "tempoCandidates": [
+      {
+        "bpm": 127.0,
+        "phaseMs": 74,
+        "strength": 0.35594
+      },
+      {
+        "bpm": 84.7,
+        "phaseMs": 332,
+        "strength": 0.16015
+      },
+      {
+        "bpm": 101.6,
+        "phaseMs": 74,
+        "strength": 0.15154
+      },
+      {
+        "bpm": 169.3,
+        "phaseMs": 185,
+        "strength": 0.13705
+      },
+      {
+        "bpm": 76.2,
+        "phaseMs": 74,
+        "strength": 0.13527
+      },
+      {
+        "bpm": 152.4,
+        "phaseMs": 74,
+        "strength": 0.10578
+      }
+    ],
+    "energyWindows": [
+      {
+        "startMs": 0,
+        "rms": 0.0363,
+        "onset": 0.0506
+      },
+      {
+        "startMs": 4000,
+        "rms": 0.0949,
+        "onset": 0.0437
+      },
+      {
+        "startMs": 8000,
+        "rms": 0.0705,
+        "onset": 0.0515
+      },
+      {
+        "startMs": 12000,
+        "rms": 0.1755,
+        "onset": 0.0447
+      },
+      {
+        "startMs": 16000,
+        "rms": 0.2513,
+        "onset": 0.0577
+      },
+      {
+        "startMs": 20000,
+        "rms": 0.2566,
+        "onset": 0.0501
+      },
+      {
+        "startMs": 24000,
+        "rms": 0.2546,
+        "onset": 0.0491
+      },
+      {
+        "startMs": 28000,
+        "rms": 0.2684,
+        "onset": 0.0324
+      },
+      {
+        "startMs": 32000,
+        "rms": 0.3023,
+        "onset": 0.0289
+      },
+      {
+        "startMs": 36000,
+        "rms": 0.2919,
+        "onset": 0.0313
+      },
+      {
+        "startMs": 40000,
+        "rms": 0.2985,
+        "onset": 0.0328
+      },
+      {
+        "startMs": 44000,
+        "rms": 0.307,
+        "onset": 0.0335
+      },
+      {
+        "startMs": 48000,
+        "rms": 0.302,
+        "onset": 0.0281
+      },
+      {
+        "startMs": 52000,
+        "rms": 0.3065,
+        "onset": 0.0241
+      },
+      {
+        "startMs": 56000,
+        "rms": 0.2459,
+        "onset": 0.0363
+      },
+      {
+        "startMs": 60000,
+        "rms": 0.2648,
+        "onset": 0.0423
+      },
+      {
+        "startMs": 64000,
+        "rms": 0.2711,
+        "onset": 0.0462
+      },
+      {
+        "startMs": 68000,
+        "rms": 0.2767,
+        "onset": 0.0374
+      },
+      {
+        "startMs": 72000,
+        "rms": 0.2586,
+        "onset": 0.0505
+      },
+      {
+        "startMs": 76000,
+        "rms": 0.2494,
+        "onset": 0.0384
+      },
+      {
+        "startMs": 80000,
+        "rms": 0.2613,
+        "onset": 0.0473
+      },
+      {
+        "startMs": 84000,
+        "rms": 0.2187,
+        "onset": 0.029
+      },
+      {
+        "startMs": 88000,
+        "rms": 0.0535,
+        "onset": 0.0179
+      },
+      {
+        "startMs": 92000,
+        "rms": 0.1605,
+        "onset": 0.0282
+      },
+      {
+        "startMs": 96000,
+        "rms": 0.2249,
+        "onset": 0.0301
+      },
+      {
+        "startMs": 100000,
+        "rms": 0.2836,
+        "onset": 0.0246
+      },
+      {
+        "startMs": 104000,
+        "rms": 0.2995,
+        "onset": 0.0312
+      },
+      {
+        "startMs": 108000,
+        "rms": 0.2921,
+        "onset": 0.0337
+      },
+      {
+        "startMs": 112000,
+        "rms": 0.3026,
+        "onset": 0.0319
+      },
+      {
+        "startMs": 116000,
+        "rms": 0.293,
+        "onset": 0.0369
+      },
+      {
+        "startMs": 120000,
+        "rms": 0.3029,
+        "onset": 0.0312
+      },
+      {
+        "startMs": 124000,
+        "rms": 0.2771,
+        "onset": 0.0273
+      },
+      {
+        "startMs": 128000,
+        "rms": 0.2672,
+        "onset": 0.0252
+      },
+      {
+        "startMs": 132000,
+        "rms": 0.3133,
+        "onset": 0.0292
+      },
+      {
+        "startMs": 136000,
+        "rms": 0.3039,
+        "onset": 0.0296
+      },
+      {
+        "startMs": 140000,
+        "rms": 0.3048,
+        "onset": 0.0326
+      },
+      {
+        "startMs": 144000,
+        "rms": 0.3159,
+        "onset": 0.0194
+      },
+      {
+        "startMs": 148000,
+        "rms": 0.1698,
+        "onset": 0.0311
+      },
+      {
+        "startMs": 152000,
+        "rms": 0.1536,
+        "onset": 0.0284
+      },
+      {
+        "startMs": 156000,
+        "rms": 0.0003,
+        "onset": 0.0001
+      }
+    ],
+    "selectedBpm": 127,
+    "gridPhaseMs": 74,
+    "sections": [
+      {
+        "startMs": 0,
+        "endMs": 16000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 16000,
+        "endMs": 32000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 32000,
+        "endMs": 56000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 56000,
+        "endMs": 88000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 88000,
+        "endMs": 96000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 96000,
+        "endMs": 104000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 104000,
+        "endMs": 124000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 124000,
+        "endMs": 132000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 132000,
+        "endMs": 148000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 148000,
+        "endMs": 157989,
+        "kind": "quiet"
+      }
+    ],
+    "charts": {
+      "easy": {
+        "level": 3,
+        "chartVersion": 1,
+        "noteCount": 147
+      },
+      "normal": {
+        "level": 6,
+        "chartVersion": 1,
+        "noteCount": 311
+      },
+      "hard": {
+        "level": 8,
+        "chartVersion": 1,
+        "noteCount": 356
+      }
+    }
+  },
+  {
+    "id": "song-03",
+    "title": "ゆっくりでいい",
+    "source": "資料\\music\\ゆっくりでいい.mp4",
+    "sourceSha256": "d0cfbe5dfe50a1e70bc5f71f1c6fb8fe0529634c6b54cc21cde435513ae78f76",
+    "durationMs": 172989,
+    "tempoCandidates": [
+      {
+        "bpm": 144.0,
+        "phaseMs": 69,
+        "strength": 0.06524
+      },
+      {
+        "bpm": 96.0,
+        "phaseMs": 280,
+        "strength": 0.05046
+      },
+      {
+        "bpm": 108.0,
+        "phaseMs": 359,
+        "strength": 0.04059
+      },
+      {
+        "bpm": 82.3,
+        "phaseMs": 289,
+        "strength": 0.03537
+      },
+      {
+        "bpm": 115.2,
+        "phaseMs": 488,
+        "strength": 0.03419
+      },
+      {
+        "bpm": 90.0,
+        "phaseMs": 250,
+        "strength": 0.03078
+      }
+    ],
+    "energyWindows": [
+      {
+        "startMs": 0,
+        "rms": 0.0914,
+        "onset": 0.0091
+      },
+      {
+        "startMs": 4000,
+        "rms": 0.1165,
+        "onset": 0.0111
+      },
+      {
+        "startMs": 8000,
+        "rms": 0.1686,
+        "onset": 0.0135
+      },
+      {
+        "startMs": 12000,
+        "rms": 0.189,
+        "onset": 0.0205
+      },
+      {
+        "startMs": 16000,
+        "rms": 0.1898,
+        "onset": 0.0203
+      },
+      {
+        "startMs": 20000,
+        "rms": 0.2042,
+        "onset": 0.0204
+      },
+      {
+        "startMs": 24000,
+        "rms": 0.189,
+        "onset": 0.0172
+      },
+      {
+        "startMs": 28000,
+        "rms": 0.214,
+        "onset": 0.02
+      },
+      {
+        "startMs": 32000,
+        "rms": 0.2113,
+        "onset": 0.0246
+      },
+      {
+        "startMs": 36000,
+        "rms": 0.1599,
+        "onset": 0.0181
+      },
+      {
+        "startMs": 40000,
+        "rms": 0.2161,
+        "onset": 0.014
+      },
+      {
+        "startMs": 44000,
+        "rms": 0.1997,
+        "onset": 0.0169
+      },
+      {
+        "startMs": 48000,
+        "rms": 0.2558,
+        "onset": 0.0152
+      },
+      {
+        "startMs": 52000,
+        "rms": 0.314,
+        "onset": 0.0156
+      },
+      {
+        "startMs": 56000,
+        "rms": 0.3028,
+        "onset": 0.0165
+      },
+      {
+        "startMs": 60000,
+        "rms": 0.3624,
+        "onset": 0.0158
+      },
+      {
+        "startMs": 64000,
+        "rms": 0.2504,
+        "onset": 0.0187
+      },
+      {
+        "startMs": 68000,
+        "rms": 0.142,
+        "onset": 0.0206
+      },
+      {
+        "startMs": 72000,
+        "rms": 0.1268,
+        "onset": 0.0219
+      },
+      {
+        "startMs": 76000,
+        "rms": 0.1284,
+        "onset": 0.0204
+      },
+      {
+        "startMs": 80000,
+        "rms": 0.2776,
+        "onset": 0.0218
+      },
+      {
+        "startMs": 84000,
+        "rms": 0.2725,
+        "onset": 0.0251
+      },
+      {
+        "startMs": 88000,
+        "rms": 0.2966,
+        "onset": 0.0182
+      },
+      {
+        "startMs": 92000,
+        "rms": 0.2061,
+        "onset": 0.0128
+      },
+      {
+        "startMs": 96000,
+        "rms": 0.1981,
+        "onset": 0.0107
+      },
+      {
+        "startMs": 100000,
+        "rms": 0.2065,
+        "onset": 0.0142
+      },
+      {
+        "startMs": 104000,
+        "rms": 0.1895,
+        "onset": 0.0145
+      },
+      {
+        "startMs": 108000,
+        "rms": 0.189,
+        "onset": 0.0131
+      },
+      {
+        "startMs": 112000,
+        "rms": 0.3536,
+        "onset": 0.0188
+      },
+      {
+        "startMs": 116000,
+        "rms": 0.3492,
+        "onset": 0.0189
+      },
+      {
+        "startMs": 120000,
+        "rms": 0.3817,
+        "onset": 0.0153
+      },
+      {
+        "startMs": 124000,
+        "rms": 0.3784,
+        "onset": 0.0179
+      },
+      {
+        "startMs": 128000,
+        "rms": 0.3684,
+        "onset": 0.0155
+      },
+      {
+        "startMs": 132000,
+        "rms": 0.3623,
+        "onset": 0.0194
+      },
+      {
+        "startMs": 136000,
+        "rms": 0.3929,
+        "onset": 0.0173
+      },
+      {
+        "startMs": 140000,
+        "rms": 0.4,
+        "onset": 0.0143
+      },
+      {
+        "startMs": 144000,
+        "rms": 0.3729,
+        "onset": 0.0182
+      },
+      {
+        "startMs": 148000,
+        "rms": 0.3806,
+        "onset": 0.0156
+      },
+      {
+        "startMs": 152000,
+        "rms": 0.2311,
+        "onset": 0.0177
+      },
+      {
+        "startMs": 156000,
+        "rms": 0.1189,
+        "onset": 0.0172
+      },
+      {
+        "startMs": 160000,
+        "rms": 0.1182,
+        "onset": 0.0169
+      },
+      {
+        "startMs": 164000,
+        "rms": 0.1036,
+        "onset": 0.0177
+      },
+      {
+        "startMs": 168000,
+        "rms": 0.0379,
+        "onset": 0.0095
+      }
+    ],
+    "selectedBpm": 72,
+    "gridPhaseMs": 70,
+    "sections": [
+      {
+        "startMs": 0,
+        "endMs": 8000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 8000,
+        "endMs": 36000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 36000,
+        "endMs": 40000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 40000,
+        "endMs": 52000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 52000,
+        "endMs": 64000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 64000,
+        "endMs": 68000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 68000,
+        "endMs": 80000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 80000,
+        "endMs": 92000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 92000,
+        "endMs": 112000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 112000,
+        "endMs": 152000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 152000,
+        "endMs": 156000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 156000,
+        "endMs": 172000,
+        "kind": "quiet"
+      }
+    ],
+    "charts": {
+      "easy": {
+        "level": 1,
+        "chartVersion": 1,
+        "noteCount": 91
+      },
+      "normal": {
+        "level": 3,
+        "chartVersion": 1,
+        "noteCount": 190
+      },
+      "hard": {
+        "level": 6,
+        "chartVersion": 1,
+        "noteCount": 219
+      }
+    }
+  },
+  {
+    "id": "song-04",
+    "title": "これが私だ",
+    "source": "資料\\music\\これが私だ.mp4",
+    "sourceSha256": "fdc949773e8f2faa5d8173c116d61a3f8daeb6de492a27a9a2fe54bdc9d3f14b",
+    "durationMs": 154320,
+    "tempoCandidates": [
+      {
+        "bpm": 86.0,
+        "phaseMs": 407,
+        "strength": 0.17167
+      },
+      {
+        "bpm": 172.0,
+        "phaseMs": 62,
+        "strength": 0.15898
+      },
+      {
+        "bpm": 114.7,
+        "phaseMs": 76,
+        "strength": 0.09239
+      },
+      {
+        "bpm": 137.6,
+        "phaseMs": 409,
+        "strength": 0.06874
+      },
+      {
+        "bpm": 129.0,
+        "phaseMs": 174,
+        "strength": 0.06377
+      },
+      {
+        "bpm": 98.3,
+        "phaseMs": 242,
+        "strength": 0.0624
+      }
+    ],
+    "energyWindows": [
+      {
+        "startMs": 0,
+        "rms": 0.2548,
+        "onset": 0.0163
+      },
+      {
+        "startMs": 4000,
+        "rms": 0.2813,
+        "onset": 0.0122
+      },
+      {
+        "startMs": 8000,
+        "rms": 0.2515,
+        "onset": 0.017
+      },
+      {
+        "startMs": 12000,
+        "rms": 0.2169,
+        "onset": 0.0293
+      },
+      {
+        "startMs": 16000,
+        "rms": 0.2112,
+        "onset": 0.0398
+      },
+      {
+        "startMs": 20000,
+        "rms": 0.2471,
+        "onset": 0.0284
+      },
+      {
+        "startMs": 24000,
+        "rms": 0.2239,
+        "onset": 0.0328
+      },
+      {
+        "startMs": 28000,
+        "rms": 0.2331,
+        "onset": 0.0316
+      },
+      {
+        "startMs": 32000,
+        "rms": 0.2932,
+        "onset": 0.0183
+      },
+      {
+        "startMs": 36000,
+        "rms": 0.3048,
+        "onset": 0.0138
+      },
+      {
+        "startMs": 40000,
+        "rms": 0.309,
+        "onset": 0.0118
+      },
+      {
+        "startMs": 44000,
+        "rms": 0.2948,
+        "onset": 0.0117
+      },
+      {
+        "startMs": 48000,
+        "rms": 0.2915,
+        "onset": 0.0171
+      },
+      {
+        "startMs": 52000,
+        "rms": 0.2111,
+        "onset": 0.0415
+      },
+      {
+        "startMs": 56000,
+        "rms": 0.2256,
+        "onset": 0.0396
+      },
+      {
+        "startMs": 60000,
+        "rms": 0.2322,
+        "onset": 0.0337
+      },
+      {
+        "startMs": 64000,
+        "rms": 0.244,
+        "onset": 0.0329
+      },
+      {
+        "startMs": 68000,
+        "rms": 0.2387,
+        "onset": 0.0272
+      },
+      {
+        "startMs": 72000,
+        "rms": 0.2248,
+        "onset": 0.033
+      },
+      {
+        "startMs": 76000,
+        "rms": 0.2867,
+        "onset": 0.0175
+      },
+      {
+        "startMs": 80000,
+        "rms": 0.3066,
+        "onset": 0.013
+      },
+      {
+        "startMs": 84000,
+        "rms": 0.301,
+        "onset": 0.0121
+      },
+      {
+        "startMs": 88000,
+        "rms": 0.3007,
+        "onset": 0.0128
+      },
+      {
+        "startMs": 92000,
+        "rms": 0.2931,
+        "onset": 0.0115
+      },
+      {
+        "startMs": 96000,
+        "rms": 0.2909,
+        "onset": 0.0123
+      },
+      {
+        "startMs": 100000,
+        "rms": 0.195,
+        "onset": 0.0118
+      },
+      {
+        "startMs": 104000,
+        "rms": 0.1126,
+        "onset": 0.017
+      },
+      {
+        "startMs": 108000,
+        "rms": 0.1501,
+        "onset": 0.018
+      },
+      {
+        "startMs": 112000,
+        "rms": 0.2276,
+        "onset": 0.0193
+      },
+      {
+        "startMs": 116000,
+        "rms": 0.2351,
+        "onset": 0.0183
+      },
+      {
+        "startMs": 120000,
+        "rms": 0.2786,
+        "onset": 0.0197
+      },
+      {
+        "startMs": 124000,
+        "rms": 0.2749,
+        "onset": 0.015
+      },
+      {
+        "startMs": 128000,
+        "rms": 0.3085,
+        "onset": 0.0113
+      },
+      {
+        "startMs": 132000,
+        "rms": 0.3043,
+        "onset": 0.0131
+      },
+      {
+        "startMs": 136000,
+        "rms": 0.2992,
+        "onset": 0.0125
+      },
+      {
+        "startMs": 140000,
+        "rms": 0.3013,
+        "onset": 0.0121
+      },
+      {
+        "startMs": 144000,
+        "rms": 0.2465,
+        "onset": 0.0226
+      },
+      {
+        "startMs": 148000,
+        "rms": 0.1446,
+        "onset": 0.0444
+      },
+      {
+        "startMs": 152000,
+        "rms": 0.0002,
+        "onset": 0.0001
+      }
+    ],
+    "selectedBpm": 172,
+    "gridPhaseMs": 62,
+    "sections": [
+      {
+        "startMs": 0,
+        "endMs": 12000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 12000,
+        "endMs": 20000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 20000,
+        "endMs": 24000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 24000,
+        "endMs": 28000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 28000,
+        "endMs": 32000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 32000,
+        "endMs": 52000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 52000,
+        "endMs": 56000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 56000,
+        "endMs": 76000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 76000,
+        "endMs": 100000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 100000,
+        "endMs": 112000,
+        "kind": "quiet"
+      },
+      {
+        "startMs": 112000,
+        "endMs": 128000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 128000,
+        "endMs": 144000,
+        "kind": "peak"
+      },
+      {
+        "startMs": 144000,
+        "endMs": 148000,
+        "kind": "groove"
+      },
+      {
+        "startMs": 148000,
+        "endMs": 154320,
+        "kind": "quiet"
+      }
+    ],
+    "charts": {
+      "easy": {
+        "level": 3,
+        "chartVersion": 1,
+        "noteCount": 193
+      },
+      "normal": {
+        "level": 6,
+        "chartVersion": 1,
+        "noteCount": 300
+      },
+      "hard": {
+        "level": 9,
+        "chartVersion": 1,
+        "noteCount": 383
+      }
+    }
+  }
+]
