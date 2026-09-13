@@ -7,7 +7,7 @@ import numpy as np
 
 specs=[
     (95,79,'#e9ad78','朝の一歩を、軽やかなリズムに。', [2,4,7]),
-    (127,74,'#d7ed80','はじけるビート。手拍子で笑顔満開。',[3,6,8]),
+    (127,74,'#d7ed80','はじけるビート。リズムで笑顔満開。',[3,6,8]),
     (72,70,'#9dbbea','深呼吸するように、ゆったり刻もう。',[1,3,6]),
     (172,62,'#e998ab','自分らしさを鳴らす、力強いビート。',[3,6,9]),
 ]
@@ -57,10 +57,8 @@ for song_index,(measurement,spec) in enumerate(zip(measurements,specs)):
                 if notes and when-notes[-1]['timeMs']<180:continue
                 phrase=phrases[(beat//16+song_index)%len(phrases)]
                 gesture='open' if sub else phrase[(beat//2 if di==0 else beat)%4]
-                # Rare, central clap accents, with time to separate hands again.
-                if not sub and (beat%(32 if di==0 else 16 if di==1 else 8)==(30 if di==0 else 14 if di==1 else 6)) and not quiet:gesture='clap'
                 if gesture==last_gesture:gesture='open' if gesture!='open' else 'gun'
-                x,y=(.5,.53) if gesture=='clap' else positions[len(notes)%len(positions)]
+                x,y=positions[len(notes)%len(positions)]
                 # Eighth-note switches stay within reach of the preceding note.
                 if sub and notes:x,y=notes[-1]['x'],notes[-1]['y']
                 notes.append({'id':f'n{len(notes)+1:04d}','timeMs':when,'gesture':gesture,'x':x,'y':y})

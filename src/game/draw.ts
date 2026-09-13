@@ -54,15 +54,6 @@ export function drawFrame(
         ctx.lineTo(x, y + radius * 1.14);
         ctx.lineTo(x - radius * 1.14, y);
         ctx.closePath();
-      } else if (note.gesture === 'clap') {
-        for (let i = 0; i < 6; i++) {
-          const a = (i * Math.PI) / 3 - Math.PI / 2;
-          const px = x + Math.cos(a) * radius * 1.1,
-            py = y + Math.sin(a) * radius * 1.1;
-          if (i === 0) ctx.moveTo(px, py);
-          else ctx.lineTo(px, py);
-        }
-        ctx.closePath();
       } else ctx.arc(x, y, radius, 0, Math.PI * 2);
       ctx.fill();
       ctx.stroke();
@@ -113,11 +104,29 @@ export function drawFrame(
       oy + event.y * h - 50 - age * 0.025,
     );
     if (event.judgement !== 'miss') {
+      const x = ox + event.x * w,
+        y = oy + event.y * h;
       ctx.strokeStyle = NOTE_STYLE[event.gesture].color;
-      ctx.lineWidth = 2;
+      ctx.shadowColor = ctx.strokeStyle;
+      ctx.shadowBlur = 18 * (1 - age / 650);
+      ctx.lineWidth = event.judgement === 'perfect' ? 4 : 2;
       ctx.beginPath();
-      ctx.arc(ox + event.x * w, oy + event.y * h, radius + age * 0.09, 0, Math.PI * 2);
+      ctx.arc(x, y, radius + age * 0.09, 0, Math.PI * 2);
       ctx.stroke();
+      ctx.fillStyle = ctx.strokeStyle;
+      for (let i = 0; i < 10; i++) {
+        const angle = (i * Math.PI * 2) / 10;
+        const distance = radius + 9 + age * 0.13;
+        ctx.beginPath();
+        ctx.arc(
+          x + Math.cos(angle) * distance,
+          y + Math.sin(angle) * distance,
+          Math.max(0.5, 3 * (1 - age / 650)),
+          0,
+          Math.PI * 2,
+        );
+        ctx.fill();
+      }
     }
     ctx.restore();
   }

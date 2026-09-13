@@ -1,7 +1,7 @@
 {
   "songId": "song-01",
   "difficulty": "normal",
-  "chartVersion": 1,
+  "chartVersion": 2,
   "level": 4,
   "durationMs": 174266,
   "offsetMs": 0,
@@ -142,7 +142,7 @@
     {
       "id": "n0020",
       "timeMs": 19032,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -261,7 +261,7 @@
     {
       "id": "n0037",
       "timeMs": 29142,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -373,7 +373,7 @@
     {
       "id": "n0053",
       "timeMs": 39252,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -485,7 +485,7 @@
     {
       "id": "n0069",
       "timeMs": 49372,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -604,7 +604,7 @@
     {
       "id": "n0086",
       "timeMs": 59452,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -730,7 +730,7 @@
     {
       "id": "n0104",
       "timeMs": 69582,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -842,7 +842,7 @@
     {
       "id": "n0120",
       "timeMs": 79672,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -954,7 +954,7 @@
     {
       "id": "n0136",
       "timeMs": 89802,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1073,7 +1073,7 @@
     {
       "id": "n0153",
       "timeMs": 99872,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1199,7 +1199,7 @@
     {
       "id": "n0171",
       "timeMs": 109972,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1325,7 +1325,7 @@
     {
       "id": "n0189",
       "timeMs": 120082,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1451,7 +1451,7 @@
     {
       "id": "n0207",
       "timeMs": 130192,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1682,7 +1682,7 @@
     {
       "id": "n0240",
       "timeMs": 160502,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },

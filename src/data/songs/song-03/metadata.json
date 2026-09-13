@@ -12,17 +12,17 @@
   "difficulties": {
     "easy": {
       "level": 1,
-      "chartVersion": 1,
+      "chartVersion": 2,
       "noteCount": 91
     },
     "normal": {
       "level": 3,
-      "chartVersion": 1,
+      "chartVersion": 2,
       "noteCount": 190
     },
     "hard": {
       "level": 6,
-      "chartVersion": 1,
+      "chartVersion": 2,
       "noteCount": 219
     }
   }

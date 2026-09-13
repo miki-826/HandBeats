@@ -6,7 +6,6 @@ import { chartSchema } from '@/lib/validation/charts';
 import { GameEngine } from '@/game/engine';
 import { containRect, mirrorPoint } from '@/game/coordinates';
 import { GestureStabilizer } from '@/mediapipe/gestureStabilizer';
-import { ClapDetector } from '@/mediapipe/clapDetector';
 import { classifyGesture, palmCenter, type Landmark } from '@/mediapipe/gestureClassifier';
 import { bestPerUser, rankingKey } from '@/lib/ranking';
 import type { Chart, GestureEvent } from '@/game/types';
@@ -20,7 +19,7 @@ const chart: Chart = {
   notes: [
     { id: 'n1', timeMs: 1000, gesture: 'fist', x: 0.25, y: 0.4 },
     { id: 'n2', timeMs: 2000, gesture: 'gun', x: 0.7, y: 0.4 },
-    { id: 'n3', timeMs: 3000, gesture: 'clap', x: 0.5, y: 0.5 },
+    { id: 'n3', timeMs: 3000, gesture: 'open', x: 0.5, y: 0.5 },
   ],
 };
 const input: GestureEvent = {
@@ -108,33 +107,6 @@ describe('gesture transitions', () => {
     s.update('fist');
     expect(s.update('fist')).toBe('fist');
   });
-  it('detects fast closing clap only once, rearms after separation, applies cooldown', () => {
-    const c = new ClapDetector();
-    const hands = (gap: number) => [
-      { x: 0.5 - gap / 2, y: 0.5 },
-      { x: 0.5 + gap / 2, y: 0.5 },
-    ];
-    expect(c.update(hands(0.5), 0)).toBeNull();
-    expect(c.update(hands(0.1), 100)).toEqual({ x: 0.5, y: 0.5 });
-    expect(c.update(hands(0.1), 150)).toBeNull();
-    expect(c.update(hands(0.5), 180)).toBeNull();
-    expect(c.update(hands(0.1), 230)).toBeNull();
-    expect(c.update(hands(0.5), 400)).toBeNull();
-    expect(c.update(hands(0.1), 500)).not.toBeNull();
-  });
-  it('rejects static contact, slow closure, and one-hand motion', () => {
-    const c = new ClapDetector();
-    const hands = (gap: number) => [
-      { x: 0.5 - gap / 2, y: 0.5 },
-      { x: 0.5 + gap / 2, y: 0.5 },
-    ];
-    expect(c.update(hands(0.1), 0)).toBeNull();
-    c.update(hands(0.4), 1000);
-    expect(c.update(hands(0.1), 1600)).toBeNull();
-    c.update(hands(0.4), 1700);
-    c.update([{ x: 0.5, y: 0.5 }], 1750);
-    expect(c.update(hands(0.1), 1800)).toBeNull();
-  });
   it('handles missing landmarks and averages palm anchors', () => {
     expect(classifyGesture([])).toBeNull();
     const hand: Array<Landmark> = Array.from({ length: 21 }, () => ({ x: 0.4, y: 0.6, z: 0 }));
@@ -155,6 +127,11 @@ describe('fixed charts', () => {
           parsed = chartSchema.parse(JSON.parse(raw));
         expect(parsed.songId).toBe(song);
         expect(parsed.difficulty).toBe(difficulty);
+        expect(parsed.chartVersion).toBeGreaterThanOrEqual(2);
+        parsed.notes.forEach((note, index) => {
+          expect(['fist', 'gun', 'open']).toContain(note.gesture);
+          if (index > 0) expect(note.gesture).not.toBe(parsed.notes[index - 1].gesture);
+        });
         for (let i = 0; i < 10; i++)
           expect(createHash('sha256').update(readFileSync(source)).digest('hex')).toBe(
             lock[`${song}:${difficulty}:${parsed.chartVersion}`],
@@ -174,6 +151,7 @@ describe('fixed charts', () => {
       { ...chart, notes: [{ ...chart.notes[0], timeMs: 7000 }] },
       { ...chart, notes: [{ ...chart.notes[0], timeMs: -1 }] },
       { ...chart, notes: [{ ...chart.notes[0], gesture: 'fake' }] },
+      { ...chart, notes: [{ ...chart.notes[0], gesture: 'clap' }] },
     ])
       expect(chartSchema.safeParse(bad).success).toBe(false);
   });

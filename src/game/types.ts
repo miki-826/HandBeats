@@ -1,4 +1,4 @@
-export const GESTURES = ['fist', 'gun', 'open', 'clap'] as const;
+export const GESTURES = ['fist', 'gun', 'open'] as const;
 export const DIFFICULTIES = ['easy', 'normal', 'hard'] as const;
 export type Gesture = (typeof GESTURES)[number];
 export type Difficulty = (typeof DIFFICULTIES)[number];
@@ -38,7 +38,7 @@ export interface GestureEvent extends Point {
   gesture: Gesture;
   timestampMs: number;
   confidence: number;
-  hand: 'left' | 'right' | 'both';
+  hand: 'left' | 'right';
 }
 export interface JudgedEvent {
   noteId: string;

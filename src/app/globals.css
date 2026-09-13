@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap');
 
 :root {
-  --bg: #101214;
+  --bg: #0d1012;
   --panel: #191c1f;
   --panel-light: #202428;
   --line: #303437;
   --text: #f1f3ef;
   --muted: #909692;
-  --accent: #d7f596;
+  --accent: #d5f998;
   --red: #ff657e;
   --blue: #65a8ff;
   --green: #87edb0;
@@ -252,7 +252,7 @@ button:not(:disabled):active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3%;
-  padding: 68px 5% 65px;
+  padding: 56px 5% 52px;
   align-items: center;
 }
 .hero-copy h1 {
@@ -312,13 +312,14 @@ button:not(:disabled):active {
   align-items: center;
 }
 .hero-stage {
-  height: 440px;
-  border: 1px solid #363d36;
+  height: 490px;
+  border: 1px solid #3a443d;
   background: #191f1c;
   position: relative;
   overflow: hidden;
-  border-radius: 7px;
+  border-radius: 20px;
   isolation: isolate;
+  box-shadow: 0 24px 80px #0005;
 }
 .stage-top,
 .stage-bottom {
@@ -352,124 +353,6 @@ button:not(:disabled):active {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 8px;
   letter-spacing: 0.5px;
-}
-.stage-grid {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  background-image:
-    linear-gradient(#758e7510 1px, transparent 1px),
-    linear-gradient(90deg, #758e7510 1px, transparent 1px);
-  background-size: 40px 40px;
-  mask-image: linear-gradient(transparent, #000 30%, #000 80%, transparent);
-}
-.stage-word {
-  position: absolute;
-  left: 14%;
-  top: 90px;
-  font-family: 'Barlow Condensed', Impact, sans-serif;
-  font-size: 86px;
-  font-weight: 800;
-  line-height: 0.89;
-  letter-spacing: -1px;
-  color: #d1ddbc;
-  transform: rotate(-8deg);
-}
-.stage-word > span {
-  color: transparent;
-  -webkit-text-stroke: 1px #909f78;
-  font-size: 72px;
-}
-.orbit {
-  position: absolute;
-  width: 490px;
-  height: 180px;
-  border: 1px solid #8e9a7444;
-  border-radius: 50%;
-  transform: rotate(-38deg);
-  left: 0;
-  top: 132px;
-  z-index: -1;
-}
-.orbit-two {
-  width: 530px;
-  height: 320px;
-  left: -20px;
-  top: 47px;
-  transform: rotate(-40deg);
-  border-color: #8e9a7426;
-}
-.hero-note {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 12px;
-}
-.hero-note-0 {
-  left: 10%;
-  top: 52%;
-}
-.hero-note-1 {
-  right: 11%;
-  top: 19%;
-}
-.hero-note-2 {
-  right: 22%;
-  bottom: 16%;
-}
-.hero-note-3 {
-  left: 41%;
-  top: 7%;
-}
-.hero-note .note-icon {
-  width: 68px;
-  height: 68px;
-  box-shadow: 0 8px 35px #0008;
-  font-size: 31px;
-}
-.hero-note-3 .note-icon {
-  width: 48px;
-  height: 48px;
-  font-size: 25px;
-}
-.hero-note-label {
-  font: 700 9px Arial;
-  letter-spacing: 1px;
-  color: var(--note-color);
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  white-space: nowrap;
-}
-.hero-note-label small {
-  font-size: 7px;
-  border-left: 1px solid #6d776f;
-  padding-left: 7px;
-  color: #a0aba1;
-  letter-spacing: 0.5px;
-}
-.demo-ring {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  top: -26px;
-  border: 1px solid var(--note-color);
-  border-radius: 50%;
-  opacity: 0.55;
-}
-.hero-note-1 .demo-ring {
-  width: 107px;
-  height: 107px;
-  top: -19px;
-}
-.hero-note-2 .demo-ring {
-  width: 88px;
-  height: 88px;
-  top: -10px;
-}
-.hero-note-3 .demo-ring {
-  display: none;
 }
 .note-icon {
   --note-color: #fff;
@@ -505,20 +388,6 @@ button:not(:disabled):active {
 .note-icon.gun > span {
   transform: rotate(-45deg);
 }
-.note-icon.clap {
-  clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
-  border-radius: 9px;
-  background: var(--note-color);
-  isolation: isolate;
-}
-.note-icon.clap:before {
-  position: absolute;
-  content: '';
-  inset: 1.5px;
-  clip-path: inherit;
-  background: #352b23;
-  z-index: -1;
-}
 .note-icon.small {
   width: 30px;
   height: 30px;
@@ -526,7 +395,7 @@ button:not(:disabled):active {
 }
 .gesture-strip {
   display: grid;
-  grid-template-columns: 1.2fr repeat(4, 1fr);
+  grid-template-columns: 1.1fr repeat(3, 1.25fr);
   margin: 0 5%;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -1353,7 +1222,7 @@ button:not(:disabled):active {
 }
 .help-gestures {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px 16px;
 }
 .help-gestures > div {
@@ -1972,7 +1841,7 @@ input[type='checkbox'] {
 }
 .gesture-checks {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   width: min(930px, 100%);
   margin: 12px 0 22px;
@@ -2135,6 +2004,183 @@ input[type='checkbox'] {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* Generated stage artwork and tactile drum controls. */
+.stage-artwork {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 58% center;
+  z-index: -2;
+}
+.hero-stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, #080d12b3, transparent 22%, transparent 55%, #080d12f0),
+    linear-gradient(90deg, #080d124d, transparent 70%);
+  pointer-events: none;
+}
+.stage-word {
+  position: absolute;
+  left: 26px;
+  bottom: 86px;
+  font-family: 'Barlow Condensed', Impact, sans-serif;
+  font-size: clamp(52px, 5.6vw, 82px);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -1px;
+  color: #f5f7ee;
+  text-shadow: 0 2px 25px #0006;
+}
+.stage-word > span {
+  color: var(--accent);
+}
+.stage-session {
+  position: absolute;
+  left: 26px;
+  bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #d4decf;
+  font:
+    600 8px Arial,
+    sans-serif;
+  letter-spacing: 1.5px;
+}
+.session-dot {
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+}
+.stage-top {
+  color: #d7e0d4;
+}
+.stage-bottom {
+  padding-top: 13px;
+  border-top: 1px solid #becdad30;
+}
+.hero-copy .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #b4d68b30;
+  border-radius: 30px;
+  background: #c9e99d07;
+  font-size: 9px;
+}
+.hero-copy h1 {
+  text-shadow: 0 0 60px #d5f99809;
+}
+.button.primary {
+  box-shadow: 0 4px 22px #c9f79712;
+  border-radius: 8px;
+}
+.button.primary:hover {
+  box-shadow: 0 6px 28px #c9f79729;
+}
+.gesture-item {
+  padding: 12px;
+  border-radius: 10px;
+}
+.gesture-item:hover {
+  background: #ffffff05;
+}
+.gesture-item .note-icon {
+  box-shadow: 0 6px 24px #0004;
+}
+.song-row {
+  border-radius: 12px;
+}
+.song-row.selected {
+  box-shadow:
+    inset 3px 0 var(--accent),
+    0 8px 28px #0002;
+}
+.selected-track {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.checking .camera-field {
+  background:
+    linear-gradient(#0b1115c9, #0b1115ed),
+    url('/assets/ui/hand-beat-stage-v2.webp') center / cover;
+}
+.gesture-checks > div {
+  border-radius: 12px;
+  background: #111a19e8;
+  border-color: #64776770;
+  box-shadow: 0 8px 26px #0003;
+}
+.game-score b {
+  color: #edf8e5;
+  font-variant-numeric: tabular-nums;
+}
+.combo-display b {
+  color: var(--accent);
+  text-shadow:
+    0 0 28px #d5f99855,
+    0 2px 8px #000;
+}
+.drum-preview {
+  padding: 16px;
+  margin: -6px 0 24px;
+  background: #101714;
+  border: 1px solid #384535;
+  border-radius: 10px;
+}
+.drum-preview > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #aebfa1;
+  font-size: 10px;
+}
+.drum-preview > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 13px;
+}
+.drum-preview button {
+  padding: 12px 5px;
+  border: 1px solid #495243;
+  border-radius: 7px;
+  font:
+    700 10px Arial,
+    sans-serif;
+  letter-spacing: 1px;
+  background: #202820;
+}
+.drum-preview button:hover {
+  border-color: var(--accent);
+  background: #2d3b27;
+}
+.drum-preview button:active {
+  transform: scale(0.95);
+  background: #405033;
+}
+.drum-preview button span {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.drum-preview small,
+.drum-preview p {
+  display: block;
+  color: #b5c1ad;
+  font-size: 10px;
+  line-height: 1.8;
+  margin-top: 10px;
+}
+
 @media (min-width: 1500px) {
   .hero {
     gap: 7%;
@@ -2143,12 +2189,6 @@ input[type='checkbox'] {
   }
   .hero-stage {
     height: 480px;
-  }
-  .stage-word {
-    font-size: 110px;
-  }
-  .stage-word > span {
-    font-size: 84px;
   }
   .hero-copy h1 {
     font-size: 73px;
@@ -2173,18 +2213,12 @@ input[type='checkbox'] {
   .hero-stage {
     height: 400px;
   }
-  .stage-word {
-    font-size: 77px;
-  }
-  .stage-word > span {
-    font-size: 60px;
-  }
   .hero-help {
     display: none;
   }
   .gesture-strip {
     gap: 15px;
-    grid-template-columns: 1fr repeat(4, 1.1fr);
+    grid-template-columns: 1fr repeat(3, 1.1fr);
   }
   .gesture-item {
     grid-template-columns: 40px 1fr;
@@ -2294,39 +2328,6 @@ input[type='checkbox'] {
   .hero-stage {
     height: 354px;
   }
-  .stage-word {
-    top: 94px;
-    font-size: 60px;
-    left: 13%;
-  }
-  .stage-word > span {
-    font-size: 48px;
-  }
-  .hero-note .note-icon {
-    width: 52px;
-    height: 52px;
-    font-size: 27px;
-  }
-  .hero-note-3 .note-icon {
-    width: 39px;
-    height: 39px;
-    font-size: 22px;
-  }
-  .demo-ring {
-    width: 96px;
-    height: 96px;
-    top: -22px;
-  }
-  .hero-note-1 .demo-ring {
-    width: 85px;
-    height: 85px;
-    top: -16px;
-  }
-  .hero-note-2 .demo-ring {
-    width: 68px;
-    height: 68px;
-    top: -8px;
-  }
   .stage-top {
     left: 12px;
     right: 12px;
@@ -2359,7 +2360,7 @@ input[type='checkbox'] {
     font-size: 8px;
   }
   .gesture-strip {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .strip-title {
     display: none;
@@ -2565,26 +2566,6 @@ input[type='checkbox'] {
   .hero-stage {
     height: 355px;
   }
-  .stage-word {
-    font-size: 79px;
-    top: 89px;
-    left: 17%;
-  }
-  .stage-word > span {
-    font-size: 62px;
-  }
-  .hero-note-3 {
-    top: 9%;
-  }
-  .hero-note-1 {
-    right: 13%;
-  }
-  .hero-note-0 {
-    left: 14%;
-  }
-  .hero-note-2 {
-    right: 24%;
-  }
   .stage-top {
     font-size: 8px;
     left: 16px;
@@ -2598,9 +2579,6 @@ input[type='checkbox'] {
   .stage-bottom > span:last-child {
     display: block;
     font-size: 7px;
-  }
-  .hero-note-label {
-    font-size: 8px;
   }
   .gesture-strip {
     padding: 23px 0;

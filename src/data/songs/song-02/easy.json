@@ -1,7 +1,7 @@
 {
   "songId": "song-02",
   "difficulty": "easy",
-  "chartVersion": 1,
+  "chartVersion": 2,
   "level": 3,
   "durationMs": 157989,
   "offsetMs": 0,
@@ -156,7 +156,7 @@
     {
       "id": "n0022",
       "timeMs": 29362,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -268,7 +268,7 @@
     {
       "id": "n0038",
       "timeMs": 44482,
-      "gesture": "clap",
+      "gesture": "open",
       "x": 0.5,
       "y": 0.53
     },
@@ -380,7 +380,7 @@
     {
       "id": "n0054",
       "timeMs": 59602,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -492,7 +492,7 @@
     {
       "id": "n0070",
       "timeMs": 74722,
-      "gesture": "clap",
+      "gesture": "open",
       "x": 0.5,
       "y": 0.53
     },
@@ -688,7 +688,7 @@
     {
       "id": "n0098",
       "timeMs": 104952,
-      "gesture": "clap",
+      "gesture": "open",
       "x": 0.5,
       "y": 0.53
     },
@@ -800,7 +800,7 @@
     {
       "id": "n0114",
       "timeMs": 120072,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -912,7 +912,7 @@
     {
       "id": "n0130",
       "timeMs": 135192,
-      "gesture": "clap",
+      "gesture": "open",
       "x": 0.5,
       "y": 0.53
     },

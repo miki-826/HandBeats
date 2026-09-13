@@ -3,77 +3,77 @@ export interface HitSoundBank {
   play(gesture: Gesture, at?: number): void;
   dispose(): void;
 }
-// Replace this factory with a decoded WAV bank implementing HitSoundBank.
-export function createSynthHitSounds(context: AudioContext, destination: AudioNode): HitSoundBank {
-  const noise = context.createBuffer(1, context.sampleRate * 0.3, context.sampleRate);
-  const data = noise.getChannelData(0);
-  // Deterministic noise; unrelated to chart data.
-  let seed = 1234567;
-  for (let i = 0; i < data.length; i++) {
-    seed = (seed * 1664525 + 1013904223) >>> 0;
-    data[i] = (seed / 4294967296) * 2 - 1;
-  }
-  const voices = new Set<AudioScheduledSourceNode>();
-  function tone(at: number, freq: number, end: number, duration: number, volume: number) {
-    const osc = context.createOscillator(),
-      gain = context.createGain();
-    osc.frequency.setValueAtTime(freq, at);
-    osc.frequency.exponentialRampToValueAtTime(end, at + duration);
-    gain.gain.setValueAtTime(volume, at);
-    gain.gain.exponentialRampToValueAtTime(0.001, at + duration);
-    osc.connect(gain).connect(destination);
-    voices.add(osc);
-    osc.onended = () => {
-      voices.delete(osc);
-      osc.disconnect();
-      gain.disconnect();
-    };
-    osc.start(at);
-    osc.stop(at + duration);
-  }
-  function hiss(at: number, frequency: number, duration: number, volume: number, clap = false) {
-    const source = context.createBufferSource(),
-      filter = context.createBiquadFilter(),
-      gain = context.createGain();
-    source.buffer = noise;
-    filter.type = clap ? 'bandpass' : 'highpass';
-    filter.frequency.value = frequency;
-    filter.Q.value = 0.7;
-    gain.gain.setValueAtTime(volume, at);
-    if (clap)
-      for (const t of [0.012, 0.024]) {
-        gain.gain.setValueAtTime(0.01, at + t - 0.004);
-        gain.gain.setValueAtTime(volume, at + t);
+
+// Render once; each hit starts a new voice immediately and lets earlier tails ring.
+export function createSynthHitSounds(
+  context: BaseAudioContext,
+  destination: AudioNode,
+): HitSoundBank {
+  const buffers = {} as Record<Gesture, AudioBuffer>;
+  const durations = { fist: 0.34, gun: 0.24, open: 0.15 };
+  for (const gesture of ['fist', 'gun', 'open'] as const) {
+    const buffer = context.createBuffer(
+      1,
+      Math.ceil(context.sampleRate * durations[gesture]),
+      context.sampleRate,
+    );
+    const data = buffer.getChannelData(0);
+    let seed = 1234567,
+      previousNoise = 0,
+      phase = 0,
+      peak = 0;
+    for (let i = 0; i < data.length; i++) {
+      const t = i / context.sampleRate;
+      seed = (seed * 1664525 + 1013904223) >>> 0;
+      const noise = (seed / 4294967296) * 2 - 1;
+      const brightNoise = (noise - previousNoise) * 0.5;
+      previousNoise = noise;
+      let sample: number;
+      if (gesture === 'fist') {
+        phase += (2 * Math.PI * (52 + 125 * Math.exp(-t * 55))) / context.sampleRate;
+        sample =
+          Math.sin(phase) * Math.exp(-t * 13) +
+          0.28 * Math.sin(phase * 2) * Math.exp(-t * 28) +
+          0.22 * brightNoise * Math.exp(-t * 180);
+      } else if (gesture === 'gun') {
+        sample =
+          0.72 * brightNoise * Math.exp(-t * 23) +
+          0.48 * Math.sin(2 * Math.PI * 185 * t) * Math.exp(-t * 30) +
+          0.24 * Math.sin(2 * Math.PI * 330 * t) * Math.exp(-t * 42);
+      } else {
+        // Closed hat with metallic body, audible even through laptop speakers.
+        const metal = Math.sin(2 * Math.PI * 3190 * t) * Math.sin(2 * Math.PI * 5270 * t);
+        sample = (0.75 * brightNoise + 0.25 * metal) * Math.exp(-t * 38);
       }
-    gain.gain.exponentialRampToValueAtTime(0.001, at + duration);
-    source.connect(filter).connect(gain).connect(destination);
-    voices.add(source);
-    source.onended = () => {
-      voices.delete(source);
-      source.disconnect();
-      filter.disconnect();
-      gain.disconnect();
-    };
-    source.start(at);
-    source.stop(at + duration);
+      const attack = Math.min(1, t / 0.001);
+      const release = Math.min(1, (data.length - 1 - i) / (context.sampleRate * 0.012));
+      data[i] = Math.tanh(sample * 1.8) * attack * release;
+      peak = Math.max(peak, Math.abs(data[i]));
+    }
+    const level = gesture === 'open' ? 0.85 : 0.98;
+    for (let i = 0; i < data.length; i++) data[i] *= level / Math.max(peak, 0.001);
+    buffers[gesture] = buffer;
   }
+  const voices = new Set<AudioBufferSourceNode>();
+  let disposed = false;
   return {
     play(gesture, at = context.currentTime) {
-      if (gesture === 'fist') tone(at, 145, 42, 0.18, 0.8);
-      if (gesture === 'gun') {
-        tone(at, 190, 85, 0.09, 0.18);
-        hiss(at, 1400, 0.12, 0.45);
-      }
-      if (gesture === 'open') hiss(at, 7200, 0.055, 0.3);
-      if (gesture === 'clap') hiss(at, 1700, 0.16, 0.7, true);
+      if (disposed) return;
+      const source = context.createBufferSource();
+      source.buffer = buffers[gesture];
+      source.connect(destination);
+      voices.add(source);
+      source.onended = () => {
+        voices.delete(source);
+        source.disconnect();
+      };
+      source.start(Math.max(at, context.currentTime));
     },
     dispose() {
+      disposed = true;
       for (const voice of voices) {
-        try {
-          voice.stop();
-        } catch {
-          /* Already ended. */
-        }
+        voice.stop();
+        voice.disconnect();
       }
       voices.clear();
     },

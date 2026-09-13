@@ -11,9 +11,6 @@ export const POSITION_RADIUS: Record<Difficulty, number> = {
   hard: 0.12,
 };
 export const GESTURE_STABLE_FRAMES = 2;
-export const CLAP_DISTANCE_THRESHOLD = 0.14;
-export const CLAP_REARM_DISTANCE = 0.27;
-export const CLAP_COOLDOWN_MS = 220;
 export const NOTE_STYLE: Record<
   Gesture,
   { icon: string; label: string; sound: string; color: string; instruction: string }
@@ -32,12 +29,5 @@ export const NOTE_STYLE: Record<
     sound: 'HI-HAT',
     color: '#87edb0',
     instruction: '手のひらをひらく',
-  },
-  clap: {
-    icon: '👏',
-    label: 'CLAP',
-    sound: 'CLAP',
-    color: '#ffb66f',
-    instruction: '両手を離してから拍手',
   },
 };

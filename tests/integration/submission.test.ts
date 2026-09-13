@@ -62,7 +62,7 @@ describe('server replay validation', () => {
       'gesture',
       {
         ...submission,
-        events: [{ ...submission.events[0], gesture: 'clap' }, submission.events[1]],
+        events: [{ ...submission.events[0], gesture: 'open' }, submission.events[1]],
       },
     ],
     ['order', { ...submission, events: [...submission.events].reverse() }],

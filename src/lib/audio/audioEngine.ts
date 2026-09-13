@@ -4,18 +4,26 @@ export class AudioEngine {
   readonly context: AudioContext;
   private music: GainNode;
   private effects: GainNode;
+  private master: DynamicsCompressorNode;
   private sounds: HitSoundBank;
   private buffer?: AudioBuffer;
   private source?: AudioBufferSourceNode;
   private startAt = 0;
   private pausedAt = 0;
   private running = false;
-  constructor(musicVolume = 0.7, sfxVolume = 0.65) {
+  constructor(musicVolume = 0.6, sfxVolume = 0.9) {
     this.context = new AudioContext({ latencyHint: 'interactive' });
     this.music = this.context.createGain();
     this.effects = this.context.createGain();
-    this.music.connect(this.context.destination);
-    this.effects.connect(this.context.destination);
+    this.master = this.context.createDynamicsCompressor();
+    this.master.threshold.value = -4;
+    this.master.knee.value = 3;
+    this.master.ratio.value = 12;
+    this.master.attack.value = 0.002;
+    this.master.release.value = 0.12;
+    this.music.connect(this.master);
+    this.effects.connect(this.master);
+    this.master.connect(this.context.destination);
     this.sounds = createSynthHitSounds(this.context, this.effects);
     this.setVolumes(musicVolume, sfxVolume);
   }
@@ -28,8 +36,8 @@ export class AudioEngine {
     this.buffer = await this.context.decodeAudioData(await response.arrayBuffer());
   }
   setVolumes(music: number, sfx: number) {
-    this.music.gain.value = music;
-    this.effects.gain.value = sfx;
+    this.music.gain.value = Math.max(0, Math.min(1, music));
+    this.effects.gain.value = Math.max(0, Math.min(1, sfx)) * 1.25;
   }
   start(countdownSeconds = 3) {
     if (!this.buffer) throw new Error('音源が準備できていません。');

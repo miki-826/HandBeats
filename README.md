@@ -1,6 +1,6 @@
 # Hand Beat
 
-**その手で、音を刻め。** Webカメラに表示されたノーツへ手を動かし、円が重なる瞬間に ✊ / 👉 / ✋ / 👏 をつくるリズムゲームです。
+**その手で、音を刻め。** Webカメラに表示されたノーツへ手を動かし、円が重なる瞬間に ✊ / 👉 / ✋ をつくるリズムゲームです。
 
 Next.js / TypeScript / MediaPipe Hand Landmarker / Web Audio API / Supabase。PC・ノートPCのChrome / Edgeを主対象としています。
 
@@ -55,18 +55,20 @@ npm run test:e2e
 ## 遊び方と実装
 
 - 手のひら中心が指定領域に入り、正しい形へ**切り替わった瞬間**を入力にします。同じ形を維持しても連打されません。
-- CLAPは両手を離してから急接近したイベントだけを判定。220msクールダウンと再度離す条件があります。
+- 拍手操作を廃止し、全12譜面をv2へ更新。旧拍手ノーツは前後と異なる手の形に置き換え、時刻・位置・ノーツ数を維持しています。旧v1のハッシュは保存しています。
 - PERFECT ±80ms / GREAT ±150ms / GOOD ±250ms。判定領域は正規化座標でEASY .18 / NORMAL .145 / HARD .12。
 - 楽曲はAudioBufferSourceNode、時間はAudioContext.currentTime、描画はrequestAnimationFrame。推論はWeb Workerで最大2手、約30fps。HUDは約10fpsで更新し、ランドマークをReact stateへ保存しません。
 - カメラとノーツCanvasは同じcontain矩形を使用し、4:3映像でもトリミングによる位置ずれを防止。左右反転を共通関数で適用します。
-- `src/lib/audio/hitSounds.ts` で短いKick / Snare / Hi-Hat / Clapを合成。`HitSoundBank`を実装する音源バンクに差し替えればWAV化できます。
+- `src/lib/audio/hitSounds.ts` でアタックと胴鳴りを重ねたKick / Snare / Hi-Hatを合成。Perfect / Great / Goodで即時再生し、マスターリミッターで楽曲との重なりを制御します。`HitSoundBank`を実装する音源バンクに差し替えればWAV化できます。
 - Esc・ボタン・別タブへの移動・音声停止でポーズ。ポーズしたプレイはランキング対象外です。復帰は2秒カウントダウン。
-- カメラなし操作体験はカーソル＋F/G/O/Cキー。指の代わりにカーソルの位置を使います。ランキングには送信しません。
+- カメラなし操作体験はカーソル＋F/G/Oキー。指の代わりにカーソルの位置を使います。ランキングには送信しません。
 - カメラ映像を送信・録画・保存しません。カメラ権限はプレイヤーのボタン操作時のみ要求し、退出時にトラックを停止します。
 
-認識閾値は `src/game/config.ts`、姿勢分類は `src/mediapipe/gestureClassifier.ts`、ゲーム判定は `src/game/engine.ts` に分離しています。実際の照明・距離・左右の手で4ジェスチャーを確認してから公開してください。
+認識閾値は `src/game/config.ts`、姿勢分類は `src/mediapipe/gestureClassifier.ts`、ゲーム判定は `src/game/engine.ts` に分離しています。実際の照明・距離・左右の手で3ジェスチャーを確認してから公開してください。
 
 ## ジャケット・新曲追加
+
+トップ画面とカメラ準備画面には、画像生成で制作したステージアートを使用しています。生成元PNG・WebPは `public/assets/ui/hand-beat-stage-v2.*`、使用プロンプトは [docs/generated-artwork.md](docs/generated-artwork.md) に保存しています。設定画面のKICK / SNARE / HI-HATボタンでヒット音を試聴できます。
 
 ジャケットがなくても曲ごとに異なるCSSアートを表示します。`public/assets/songs/<id>/jacket.webp` を配置して再ビルドすれば、ロジックを変えずに表示されます。既存画像が壊れていた場合もフォールバックします。
 
@@ -103,7 +105,7 @@ Vercel/GitHubの接続設定、Supabaseプロジェクト作成・秘密キー�
 
 ## 検証範囲
 
-`tests/unit/`: 時間境界、スコア、コンボ、位置、鏡像・contain矩形、姿勢遷移、CLAP、全12固定譜面、ランキングキー。
+`tests/unit/`: 時間境界、スコア、コンボ、位置、鏡像・contain矩形、姿勢遷移、廃止ジェスチャーの拒否、全12固定譜面、ランキングキー。
 
 `tests/integration/`: API契約（DB/Authアダプターのモック）と入力改ざん拒否。加えて実際のPostgreSQL WASM（PGlite）上でSQL migration / RLS / 権限 / 原子的登録 / 再利用拒否 / rollback / 最高スコアViewを検証します。Supabaseクラウドへの実接続検証とは区別しています。
 

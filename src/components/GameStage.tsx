@@ -88,7 +88,7 @@ export function GameStage({
     const time = audio.current.timeMs - Math.max(0, performance.now() - event.timestampMs);
     const hit = engine.current.input({ ...event, timestampMs: time });
     if (hit) {
-      audio.current.hit(hit.gesture);
+      if (hit.judgement !== 'miss') audio.current.hit(hit.gesture);
       feedback.current.push({ event: hit, at: audio.current.timeMs });
     }
   }, []);
@@ -204,7 +204,7 @@ export function GameStage({
         return;
       }
       if (!practiceRef.current || phase.current !== 'playing' || event.repeat) return;
-      const gesture = ({ f: 'fist', g: 'gun', o: 'open', c: 'clap' } as Record<string, Gesture>)[
+      const gesture = ({ f: 'fist', g: 'gun', o: 'open' } as Record<string, Gesture>)[
         event.key.toLowerCase()
       ];
       if (gesture) {
@@ -214,7 +214,7 @@ export function GameStage({
           gesture,
           timestampMs: performance.now(),
           confidence: 1,
-          hand: gesture === 'clap' ? 'both' : 'right',
+          hand: 'right',
         });
       }
     };
@@ -340,7 +340,7 @@ export function GameStage({
           </span>
         </div>
         <div className="game-score">
-          <small>SCORE</small>
+          <small>SCORE / LIVE SESSION</small>
           <b>{hud.score.toLocaleString().padStart(7, '0')}</b>
         </div>
         <button
@@ -468,7 +468,7 @@ export function GameStage({
                 )}{' '}
                 {!audioReady
                   ? '音源を準備中…'
-                  : seen.length === 4
+                  : seen.length === GESTURES.length
                     ? 'READY — プレイ開始'
                     : 'チェックをスキップして開始'}
               </button>
@@ -483,9 +483,7 @@ export function GameStage({
               </button>
             )}
             {practice && (
-              <p className="muted">
-                ノーツにカーソルを重ね、F / G / O / C キーを押すと判定できます。
-              </p>
+              <p className="muted">ノーツにカーソルを重ね、F / G / O キーを押すと判定できます。</p>
             )}
           </div>
         )}
@@ -533,12 +531,13 @@ export function GameStage({
         ) : (
           <span>
             {screen === 'check'
-              ? '4つのジェスチャーを確認しよう'
+              ? '3つのジェスチャーを確認しよう'
               : '円が重なる瞬間に、手の形を変えよう'}
           </span>
         )}
         <span>
-          <Volume2 size={14} /> {Math.round(musicVolume * 100)}%
+          <Volume2 size={14} /> MUSIC {Math.round(musicVolume * 100)}% · DRUM{' '}
+          {Math.round(sfxVolume * 100)}%
         </span>
       </footer>
     </div>

@@ -2,7 +2,6 @@ import { mirrorPoint } from '@/game/coordinates';
 import type { Gesture, GestureEvent, Point } from '@/game/types';
 import { classifyGesture, palmCenter, type Landmark } from './gestureClassifier';
 import { GestureStabilizer } from './gestureStabilizer';
-import { ClapDetector } from './clapDetector';
 export interface TrackedHand extends Point {
   gesture: Gesture | null;
   hand: 'left' | 'right';
@@ -24,7 +23,6 @@ export class HandTracker {
   private lastVideo = -1;
   private lastSent = 0;
   private stabilizers = { left: new GestureStabilizer(), right: new GestureStabilizer() };
-  private clap = new ClapDetector();
   private lastSeen = { left: 0, right: 0 };
   hands: TrackedHand[] = [];
   constructor(
@@ -91,10 +89,7 @@ export class HandTracker {
     });
     for (const hand of ['left', 'right'] as const)
       if (now - this.lastSeen[hand] > 200) this.stabilizers[hand].reset();
-    const clap = this.clap.update(this.hands, now);
-    if (clap)
-      this.input({ ...clap, gesture: 'clap', hand: 'both', confidence: 1, timestampMs: now });
-    else events.forEach(this.input);
+    events.forEach(this.input);
   }
   private loop = () => {
     if (this.stopped) return;

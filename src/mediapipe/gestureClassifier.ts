@@ -11,7 +11,7 @@ function angle(a: Landmark, b: Landmark, c: Landmark) {
     (Math.hypot(u.x, u.y, u.z) * Math.hypot(v.x, v.y, v.z) || 1);
   return (Math.acos(Math.max(-1, Math.min(1, cosine))) * 180) / Math.PI;
 }
-export function classifyGesture(hand: Landmark[]): Exclude<Gesture, 'clap'> | null {
+export function classifyGesture(hand: Landmark[]): Gesture | null {
   if (hand.length !== 21) return null;
   const extended = [5, 9, 13, 17].map(
     (i) =>

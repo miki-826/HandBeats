@@ -8,21 +8,21 @@
   "jacket": "/assets/songs/song-02/jacket.webp",
   "previewStartMs": 32000,
   "color": "#d7ed80",
-  "mood": "はじけるビート。手拍子で笑顔満開。",
+  "mood": "はじけるビート。リズムで笑顔満開。",
   "difficulties": {
     "easy": {
       "level": 3,
-      "chartVersion": 1,
+      "chartVersion": 2,
       "noteCount": 147
     },
     "normal": {
       "level": 6,
-      "chartVersion": 1,
+      "chartVersion": 2,
       "noteCount": 311
     },
     "hard": {
       "level": 8,
-      "chartVersion": 1,
+      "chartVersion": 2,
       "noteCount": 356
     }
   }

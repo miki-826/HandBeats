@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import {
   ArrowDown,
   ArrowLeft,
@@ -35,6 +35,7 @@ import { authToken, rankingConfigured } from '@/lib/supabase/browser';
 import { Jacket } from './Jacket';
 import { NoteIcon } from './NoteIcon';
 import { GameStage } from './GameStage';
+import { DrumPreview } from './DrumPreview';
 
 type Screen = 'title' | 'menu' | 'game' | 'result' | 'ranking';
 interface Settings {
@@ -56,7 +57,7 @@ export function HandBeat({
     [selected, setSelected] = useState(songs[0].id),
     [difficulty, setDifficulty] = useState<Difficulty>('normal');
   const [modal, setModal] = useState<'help' | 'settings' | null>(null),
-    [settings, setSettings] = useState<Settings>({ music: 0.7, sfx: 0.65, mirror: true });
+    [settings, setSettings] = useState<Settings>({ music: 0.6, sfx: 0.9, mirror: true });
   const [best, setBest] = useState<Record<string, number>>({}),
     [result, setResult] = useState<PlayResult | null>(null),
     [run, setRun] = useState(0);
@@ -344,7 +345,7 @@ export function HandBeat({
             <section className="hero">
               <div className="hero-copy">
                 <div className="eyebrow">
-                  <span className="short-line" /> NO CONTROLLER. JUST YOU.
+                  <span className="short-line" /> YOUR HANDS. YOUR RHYTHM.
                 </div>
                 <h1>
                   その手で、
@@ -353,9 +354,9 @@ export function HandBeat({
                   <span className="title-dot">●</span>
                 </h1>
                 <p>
-                  画面の向こうじゃない。
+                  グー、指さし、手のひら。
                   <br />
-                  あなたのいる場所が、ステージになる。
+                  3つのジェスチャーで、ビートを鳴らそう。
                 </p>
                 <div className="hero-actions">
                   <button className="button primary large-button" onClick={() => navigate('menu')}>
@@ -390,42 +391,35 @@ export function HandBeat({
                   <span>
                     <i /> YOUR ROOM. YOUR STAGE.
                   </span>
-                  <span>01 — 04</span>
+                  <span>GESTURE DRUM MACHINE</span>
                 </div>
-                <div className="stage-grid" />
+                <img
+                  className="stage-artwork"
+                  src="/assets/ui/hand-beat-stage-v2.webp"
+                  alt="光るドラムパッドとクロームの手のステージアート"
+                  fetchPriority="high"
+                />
                 <div className="stage-word">
-                  FEEL
+                  MAKE
                   <br />
-                  <span>THE BEAT.</span>
+                  <span>IT LOUD.</span>
                 </div>
-                <div className="orbit orbit-one" />
-                <div className="orbit orbit-two" />
-                {GESTURES.map((g, i) => (
-                  <div
-                    key={g}
-                    className={`hero-note hero-note-${i}`}
-                    style={{ '--note-color': NOTE_STYLE[g].color } as CSSProperties}
-                  >
-                    <span className="demo-ring" />
-                    <NoteIcon gesture={g} />
-                    <span className="hero-note-label">
-                      {NOTE_STYLE[g].label}
-                      <small>{NOTE_STYLE[g].sound}</small>
-                    </span>
-                  </div>
-                ))}
+                <div className="stage-session">
+                  <span className="session-dot" /> 3 MOVES. ENDLESS RHYTHM.
+                </div>
+
                 <div className="stage-bottom">
                   <AudioLines size={19} />
-                  <span>MOVE. POSE. HIT.</span>
+                  <span>PLAY WITH YOUR HANDS.</span>
                   <span>カメラ × ジェスチャー × リズム</span>
                 </div>
               </div>
             </section>
             <section className="gesture-strip">
               <div className="strip-title">
-                <span className="eyebrow">FOUR MOVES.</span>
+                <span className="eyebrow">THREE MOVES.</span>
                 <h2>
-                  4つの動きで、
+                  3つの動きで、
                   <br />
                   音楽になる。
                 </h2>
@@ -936,7 +930,7 @@ export function HandBeat({
                   ))}
                 </div>
                 <p className="help-tip">
-                  同じ形を出し続けても連打にはなりません。次の形へ切り替えましょう。CLAPは両手を離してから、すばやく合わせます。
+                  同じ形を出し続けても連打にはなりません。次の形へ切り替えましょう。Perfect・Great・Goodで、手の形に合わせたドラム音が鳴ります。
                 </p>
                 <p className="privacy-line">
                   <ShieldCheck size={15} /> カメラ映像の送信・録画・保存はしません。
@@ -982,6 +976,7 @@ export function HandBeat({
                     onChange={(e) => updateSettings({ ...settings, sfx: Number(e.target.value) })}
                   />
                 </label>
+                <DrumPreview volume={settings.sfx} />
                 <label className="mirror-setting">
                   <span>
                     <b>カメラの左右反転</b>

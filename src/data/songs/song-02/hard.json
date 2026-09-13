@@ -1,7 +1,7 @@
 {
   "songId": "song-02",
   "difficulty": "hard",
-  "chartVersion": 1,
+  "chartVersion": 2,
   "level": 8,
   "durationMs": 157989,
   "offsetMs": 0,
@@ -135,7 +135,7 @@
     {
       "id": "n0019",
       "timeMs": 18022,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -191,7 +191,7 @@
     {
       "id": "n0027",
       "timeMs": 21802,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -247,7 +247,7 @@
     {
       "id": "n0035",
       "timeMs": 25582,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -303,7 +303,7 @@
     {
       "id": "n0043",
       "timeMs": 29362,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -359,7 +359,7 @@
     {
       "id": "n0051",
       "timeMs": 33142,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -443,7 +443,7 @@
     {
       "id": "n0063",
       "timeMs": 36932,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -527,7 +527,7 @@
     {
       "id": "n0075",
       "timeMs": 40702,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -611,7 +611,7 @@
     {
       "id": "n0087",
       "timeMs": 44482,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -695,7 +695,7 @@
     {
       "id": "n0099",
       "timeMs": 48272,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -779,7 +779,7 @@
     {
       "id": "n0111",
       "timeMs": 52042,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -863,7 +863,7 @@
     {
       "id": "n0123",
       "timeMs": 55832,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -926,7 +926,7 @@
     {
       "id": "n0132",
       "timeMs": 59602,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -982,7 +982,7 @@
     {
       "id": "n0140",
       "timeMs": 63382,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1038,7 +1038,7 @@
     {
       "id": "n0148",
       "timeMs": 67162,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1094,7 +1094,7 @@
     {
       "id": "n0156",
       "timeMs": 70942,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1150,7 +1150,7 @@
     {
       "id": "n0164",
       "timeMs": 74722,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1206,7 +1206,7 @@
     {
       "id": "n0172",
       "timeMs": 78502,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1262,7 +1262,7 @@
     {
       "id": "n0180",
       "timeMs": 82282,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1318,7 +1318,7 @@
     {
       "id": "n0188",
       "timeMs": 86058,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1423,7 +1423,7 @@
     {
       "id": "n0203",
       "timeMs": 97402,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1479,7 +1479,7 @@
     {
       "id": "n0211",
       "timeMs": 101172,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1535,7 +1535,7 @@
     {
       "id": "n0219",
       "timeMs": 104952,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -1619,7 +1619,7 @@
     {
       "id": "n0231",
       "timeMs": 108742,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1703,7 +1703,7 @@
     {
       "id": "n0243",
       "timeMs": 112512,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1787,7 +1787,7 @@
     {
       "id": "n0255",
       "timeMs": 116292,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1871,7 +1871,7 @@
     {
       "id": "n0267",
       "timeMs": 120072,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -1955,7 +1955,7 @@
     {
       "id": "n0279",
       "timeMs": 123852,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -2018,7 +2018,7 @@
     {
       "id": "n0288",
       "timeMs": 127642,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -2074,7 +2074,7 @@
     {
       "id": "n0296",
       "timeMs": 131412,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -2144,7 +2144,7 @@
     {
       "id": "n0306",
       "timeMs": 135192,
-      "gesture": "clap",
+      "gesture": "gun",
       "x": 0.5,
       "y": 0.53
     },
@@ -2228,7 +2228,7 @@
     {
       "id": "n0318",
       "timeMs": 138972,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -2312,7 +2312,7 @@
     {
       "id": "n0330",
       "timeMs": 142762,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },
@@ -2396,7 +2396,7 @@
     {
       "id": "n0342",
       "timeMs": 146532,
-      "gesture": "clap",
+      "gesture": "fist",
       "x": 0.5,
       "y": 0.53
     },

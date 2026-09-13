@@ -7,12 +7,12 @@
     "durationMs": 174266,
     "tempoCandidates": [
       {
-        "bpm": 95.0,
+        "bpm": 95,
         "phaseMs": 79,
         "strength": 0.33812
       },
       {
-        "bpm": 76.0,
+        "bpm": 76,
         "phaseMs": 395,
         "strength": 0.16761
       },
@@ -27,12 +27,12 @@
         "strength": 0.117
       },
       {
-        "bpm": 114.0,
+        "bpm": 114,
         "phaseMs": 395,
         "strength": 0.09794
       },
       {
-        "bpm": 152.0,
+        "bpm": 152,
         "phaseMs": 0,
         "strength": 0.08471
       }
@@ -255,8 +255,8 @@
       },
       {
         "startMs": 172000,
-        "rms": 0.0,
-        "onset": 0.0
+        "rms": 0,
+        "onset": 0
       }
     ],
     "selectedBpm": 95,
@@ -331,17 +331,17 @@
     "charts": {
       "easy": {
         "level": 2,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 121
       },
       "normal": {
         "level": 4,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 257
       },
       "hard": {
         "level": 7,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 298
       }
     }
@@ -354,7 +354,7 @@
     "durationMs": 157989,
     "tempoCandidates": [
       {
-        "bpm": 127.0,
+        "bpm": 127,
         "phaseMs": 74,
         "strength": 0.35594
       },
@@ -643,17 +643,17 @@
     "charts": {
       "easy": {
         "level": 3,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 147
       },
       "normal": {
         "level": 6,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 311
       },
       "hard": {
         "level": 8,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 356
       }
     }
@@ -666,17 +666,17 @@
     "durationMs": 172989,
     "tempoCandidates": [
       {
-        "bpm": 144.0,
+        "bpm": 144,
         "phaseMs": 69,
         "strength": 0.06524
       },
       {
-        "bpm": 96.0,
+        "bpm": 96,
         "phaseMs": 280,
         "strength": 0.05046
       },
       {
-        "bpm": 108.0,
+        "bpm": 108,
         "phaseMs": 359,
         "strength": 0.04059
       },
@@ -691,7 +691,7 @@
         "strength": 0.03419
       },
       {
-        "bpm": 90.0,
+        "bpm": 90,
         "phaseMs": 250,
         "strength": 0.03078
       }
@@ -980,17 +980,17 @@
     "charts": {
       "easy": {
         "level": 1,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 91
       },
       "normal": {
         "level": 3,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 190
       },
       "hard": {
         "level": 6,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 219
       }
     }
@@ -1003,12 +1003,12 @@
     "durationMs": 154320,
     "tempoCandidates": [
       {
-        "bpm": 86.0,
+        "bpm": 86,
         "phaseMs": 407,
         "strength": 0.17167
       },
       {
-        "bpm": 172.0,
+        "bpm": 172,
         "phaseMs": 62,
         "strength": 0.15898
       },
@@ -1023,7 +1023,7 @@
         "strength": 0.06874
       },
       {
-        "bpm": 129.0,
+        "bpm": 129,
         "phaseMs": 174,
         "strength": 0.06377
       },
@@ -1307,17 +1307,17 @@
     "charts": {
       "easy": {
         "level": 3,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 193
       },
       "normal": {
         "level": 6,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 300
       },
       "hard": {
         "level": 9,
-        "chartVersion": 1,
+        "chartVersion": 2,
         "noteCount": 383
       }
     }
