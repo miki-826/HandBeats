@@ -28,7 +28,7 @@ test('Title → song/difficulty → fake camera → game → pause → result �
   await page.screenshot({ path: 'test-results/song-select.png', fullPage: true });
   await page.getByRole('button', { name: 'PLAY THIS TRACK' }).click();
   await page.getByRole('button', { name: 'カメラを有効にする', exact: true }).click();
-  await expect(page.getByText('0 HANDS DETECTED')).toBeVisible({ timeout: 45000 });
+  await expect(page.getByText('手を映してください')).toBeVisible({ timeout: 45000 });
   await page.screenshot({ path: 'test-results/camera-check.png', fullPage: true });
   await page.getByRole('button', { name: 'チェックをスキップして開始' }).click();
   await expect(page.getByRole('button', { name: '一時停止', exact: true })).toBeEnabled();

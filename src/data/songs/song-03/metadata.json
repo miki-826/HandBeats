@@ -5,9 +5,9 @@
   "bpm": 72,
   "durationMs": 172989,
   "audio": "/assets/songs/song-03/audio.m4a",
-  "jacket": "/assets/songs/song-03/jacket.webp",
+  "jacket": "/assets/songs/song-03/banner-v3.webp",
   "previewStartMs": 52000,
-  "color": "#9dbbea",
+  "color": "#91bbf5",
   "mood": "深呼吸するように、ゆったり刻もう。",
   "difficulties": {
     "easy": {

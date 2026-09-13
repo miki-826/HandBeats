@@ -5,9 +5,9 @@
   "bpm": 95,
   "durationMs": 174266,
   "audio": "/assets/songs/song-01/audio.m4a",
-  "jacket": "/assets/songs/song-01/jacket.webp",
+  "jacket": "/assets/songs/song-01/banner-v3.webp",
   "previewStartMs": 24000,
-  "color": "#e9ad78",
+  "color": "#7dd9ff",
   "mood": "朝の一歩を、軽やかなリズムに。",
   "difficulties": {
     "easy": {

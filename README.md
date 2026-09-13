@@ -1,6 +1,6 @@
 # Hand Beat
 
-**その手で、音を刻め。** Webカメラに表示されたノーツへ手を動かし、円が重なる瞬間に ✊ / 👉 / ✋ をつくるリズムゲームです。
+**その手で、音を掴め。** Webカメラに表示されたノーツへ手を動かし、円が重なる瞬間に ✊ / 👉 / ✋ をつくるリズムゲームです。
 
 Next.js / TypeScript / MediaPipe Hand Landmarker / Web Audio API / Supabase。PC・ノートPCのChrome / Edgeを主対象としています。
 
@@ -55,6 +55,7 @@ npm run test:e2e
 ## 遊び方と実装
 
 - 手のひら中心が指定領域に入り、正しい形へ**切り替わった瞬間**を入力にします。同じ形を維持しても連打されません。
+- OPENは親指以外の3本以上が伸びていれば認識し、少し曲がった指にも対応します。未分類の「HAND」表示は廃止。確定した形を表示し、3フレーム以内の未分類では解除しません。4フレーム連続の未分類、または200ms超の手の消失で解除します。分類不能な形そのものを得点入力にはしません。
 - 拍手操作を廃止し、全12譜面をv2へ更新。旧拍手ノーツは前後と異なる手の形に置き換え、時刻・位置・ノーツ数を維持しています。旧v1のハッシュは保存しています。
 - PERFECT ±80ms / GREAT ±150ms / GOOD ±250ms。判定領域は正規化座標でEASY .18 / NORMAL .145 / HARD .12。
 - 楽曲はAudioBufferSourceNode、時間はAudioContext.currentTime、描画はrequestAnimationFrame。推論はWeb Workerで最大2手、約30fps。HUDは約10fpsで更新し、ランドマークをReact stateへ保存しません。
@@ -68,9 +69,9 @@ npm run test:e2e
 
 ## ジャケット・新曲追加
 
-トップ画面とカメラ準備画面には、画像生成で制作したステージアートを使用しています。生成元PNG・WebPは `public/assets/ui/hand-beat-stage-v2.*`、使用プロンプトは [docs/generated-artwork.md](docs/generated-artwork.md) に保存しています。設定画面のKICK / SNARE / HI-HATボタンでヒット音を試聴できます。
+青いデジタルステージ「Blue Horizon」に一新しています。内蔵画像生成で制作した透過ロゴ・背景は `public/assets/ui/{hand-beat-logo-v3,blue-arena-v3}.webp`、各曲のバナーは `public/assets/songs/<id>/banner-v3.webp`。全6点の保存先と使用プロンプトは [docs/blue-horizon-artwork.md](docs/blue-horizon-artwork.md) に記録しています。タイトル・選曲・準備・プレイ・結果画面で使用し、画像の日本語タイトルはHTMLで表示します。設定画面のKICK / SNARE / HI-HATボタンでヒット音を試聴できます。
 
-ジャケットがなくても曲ごとに異なるCSSアートを表示します。`public/assets/songs/<id>/jacket.webp` を配置して再ビルドすれば、ロジックを変えずに表示されます。既存画像が壊れていた場合もフォールバックします。
+ジャケット画像はメタデータの `jacket` で指定します。横長バナーを `public/assets/songs/<id>/` に配置し、その公開パスを設定して再ビルドします。画像が壊れていた場合は曲ごとのCSSアートへフォールバックします。
 
 新曲は `public/assets/songs/<new-id>/audio.*` と `src/data/songs/<new-id>/metadata.json`、3譜面を追加します。既存メタデータに従い `id/title/artist/bpm/durationMs/audio/jacket/previewStartMs/color/mood/difficulties` を記載します。ディレクトリから自動検出するため曲一覧のコード変更は不要です。新キーのSHA-256をlockに追加し、`npm run validate:charts` を通してください。
 

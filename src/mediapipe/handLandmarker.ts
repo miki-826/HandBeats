@@ -75,6 +75,7 @@ export class HandTracker {
       const hand = data.handedness[i][0].categoryName === 'Left' ? 'left' : 'right';
       const point = mirrorPoint(palmCenter(landmarks), this.mirrored);
       const gesture = classifyGesture(data.worldLandmarks[i] ?? landmarks);
+      if (now - this.lastSeen[hand] > 200) this.stabilizers[hand].reset();
       this.lastSeen[hand] = now;
       const changed = this.stabilizers[hand].update(gesture);
       if (changed)
@@ -85,7 +86,7 @@ export class HandTracker {
           timestampMs: now,
           confidence: data.handedness[i][0].score,
         });
-      return { ...point, gesture, hand };
+      return { ...point, gesture: this.stabilizers[hand].gesture, hand };
     });
     for (const hand of ['left', 'right'] as const)
       if (now - this.lastSeen[hand] > 200) this.stabilizers[hand].reset();

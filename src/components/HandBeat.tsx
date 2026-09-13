@@ -301,16 +301,10 @@ export function HandBeat({
       />
     );
   return (
-    <div className="app-shell">
+    <div className={`app-shell screen-${screen}`}>
       <header className="site-header">
         <button className="brand" onClick={() => navigate('title')} aria-label="Hand Beat タイトル">
-          <span className="brand-mark">
-            <AudioLines size={24} />
-          </span>
-          <span>
-            hand<span className="brand-light">beat</span>
-            <i>®</i>
-          </span>
+          <img src="/assets/ui/hand-beat-logo-v3.webp" alt="Hand Beat" width="180" height="60" />
         </button>
         <nav aria-label="メインナビゲーション">
           <button className={screen === 'menu' ? 'active' : ''} onClick={() => navigate('menu')}>
@@ -343,20 +337,31 @@ export function HandBeat({
         {screen === 'title' && (
           <>
             <section className="hero">
+              <img
+                className="hero-backdrop"
+                src="/assets/ui/blue-arena-v3.webp"
+                alt=""
+                fetchPriority="high"
+              />
               <div className="hero-copy">
                 <div className="eyebrow">
-                  <span className="short-line" /> YOUR HANDS. YOUR RHYTHM.
+                  <span className="short-line" /> MUSIC × MOTION × YOU
                 </div>
+                <img
+                  className="hero-logo"
+                  src="/assets/ui/hand-beat-logo-v3.webp"
+                  alt="Hand Beat"
+                  width="600"
+                  height="200"
+                  fetchPriority="high"
+                />
                 <h1>
-                  その手で、
-                  <br />
-                  <span>音を刻め。</span>
-                  <span className="title-dot">●</span>
+                  その手で、<span>音を掴め。</span>
                 </h1>
                 <p>
-                  グー、指さし、手のひら。
+                  手が、楽器になる。
                   <br />
-                  3つのジェスチャーで、ビートを鳴らそう。
+                  動き出す、あたらしいリズム体験。
                 </p>
                 <div className="hero-actions">
                   <button className="button primary large-button" onClick={() => navigate('menu')}>
@@ -383,41 +388,32 @@ export function HandBeat({
                   </span>
                 </div>
               </div>
-              <div
-                className="hero-stage"
-                aria-label="カメラの指定位置で、円が重なる瞬間にジェスチャーするゲーム"
-              >
-                <div className="stage-top">
-                  <span>
-                    <i /> YOUR ROOM. YOUR STAGE.
-                  </span>
-                  <span>GESTURE DRUM MACHINE</span>
+              <div className="hero-stage" aria-label="3種類のジェスチャーでドラムを演奏">
+                <span className="stage-kicker">BEYOND THE SCREEN</span>
+                <p className="stage-manifesto">Music × Motion × You</p>
+                <span className="stage-subtitle">動くたび、世界が輝く。</span>
+                <div className="hero-pads">
+                  {GESTURES.map((g) => (
+                    <div key={g} className={`hero-pad pad-${g}`}>
+                      <NoteIcon gesture={g} />
+                      <span>{NOTE_STYLE[g].sound}</span>
+                    </div>
+                  ))}
                 </div>
-                <img
-                  className="stage-artwork"
-                  src="/assets/ui/hand-beat-stage-v2.webp"
-                  alt="光るドラムパッドとクロームの手のステージアート"
-                  fetchPriority="high"
-                />
-                <div className="stage-word">
-                  MAKE
-                  <br />
-                  <span>IT LOUD.</span>
+                <div className="stage-caption">
+                  <span /> YOUR ROOM IS YOUR STAGE
                 </div>
-                <div className="stage-session">
-                  <span className="session-dot" /> 3 MOVES. ENDLESS RHYTHM.
-                </div>
-
-                <div className="stage-bottom">
-                  <AudioLines size={19} />
-                  <span>PLAY WITH YOUR HANDS.</span>
-                  <span>カメラ × ジェスチャー × リズム</span>
-                </div>
+              </div>
+              <div className="hero-bottom">
+                <span>01 / ENTER THE BLUE</span>
+                <span>
+                  カメラをつないで、音楽の中へ。 <ArrowDown size={14} />
+                </span>
               </div>
             </section>
             <section className="gesture-strip">
               <div className="strip-title">
-                <span className="eyebrow">THREE MOVES.</span>
+                <span className="eyebrow">THE WAY YOU PLAY</span>
                 <h2>
                   3つの動きで、
                   <br />
@@ -437,8 +433,8 @@ export function HandBeat({
             </section>
             <section className="library-teaser">
               <div>
-                <span className="eyebrow">THE TRACKLIST</span>
-                <h2>今日のビートを、見つけよう。</h2>
+                <span className="eyebrow">EXPLORE THE SOUND</span>
+                <h2>次は、どんな世界で鳴らそう。</h2>
               </div>
               <button className="text-button" onClick={() => navigate('menu')}>
                 {songs.length} ORIGINAL TRACKS <ArrowRight size={17} />
@@ -469,7 +465,7 @@ export function HandBeat({
           <section className="selection-page">
             <div className="page-heading">
               <div>
-                <span className="eyebrow">FIND YOUR RHYTHM</span>
+                <span className="eyebrow">CHOOSE YOUR WORLD</span>
                 <h1>
                   SELECT MUSIC<span className="accent-dot">.</span>
                 </h1>
@@ -616,6 +612,10 @@ export function HandBeat({
         )}
         {screen === 'result' && result && (
           <section className="result-page">
+            <div className="result-song-banner">
+              <Jacket key={song.id} song={song} large />
+              <span>SESSION COMPLETE / {song.title}</span>
+            </div>
             <div className="result-heading">
               <span className="eyebrow">NICE SESSION</span>
               <h1>
@@ -930,7 +930,7 @@ export function HandBeat({
                   ))}
                 </div>
                 <p className="help-tip">
-                  同じ形を出し続けても連打にはなりません。次の形へ切り替えましょう。Perfect・Great・Goodで、手の形に合わせたドラム音が鳴ります。
+                  同じ形を出し続けても連打にはなりません。次の形へ切り替えましょう。パーは力を抜いて自然にひらけばOKです。Perfect・Great・Goodで、手の形に合わせたドラム音が鳴ります。
                 </p>
                 <p className="privacy-line">
                   <ShieldCheck size={15} /> カメラ映像の送信・録画・保存はしません。

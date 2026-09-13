@@ -26,6 +26,7 @@ import { AudioEngine } from '@/lib/audio/audioEngine';
 import { HandTracker, openCamera } from '@/mediapipe/handLandmarker';
 import { authToken, rankingConfigured } from '@/lib/supabase/browser';
 import { NoteIcon } from './NoteIcon';
+import { Jacket } from './Jacket';
 
 export function GameStage({
   song,
@@ -68,7 +69,7 @@ export function GameStage({
     alive = useRef(true),
     cameraOpening = useRef(false);
   const [onlineMessage, setOnlineMessage] = useState(''),
-    [hud, setHud] = useState({ score: 0, combo: 0, time: -3000 });
+    [hud, setHud] = useState({ score: 0, combo: 0, time: -3000, accuracy: 0, maxCombo: 0 });
   const rect = useRef<FieldRect>({ x: 0, y: 0, width: 1280, height: 720 }),
     pointer = useRef({ x: 0.5, y: 0.5 });
   const feedback = useRef<Parameters<typeof drawFrame>[5]>([]),
@@ -186,8 +187,17 @@ export function GameStage({
       if (performance.now() - lastHud > 90) {
         lastHud = performance.now();
         setHandCount(tracker.current?.hands.length ?? 0);
-        if (engine.current)
-          setHud({ score: engine.current.result.score, combo: engine.current.combo, time });
+        if (engine.current) {
+          const result = engine.current.result;
+          const judgedCount = engine.current.judged.size;
+          setHud({
+            score: result.score,
+            combo: engine.current.combo,
+            time,
+            accuracy: judgedCount ? (result.accuracy * chart.notes.length) / judgedCount : 0,
+            maxCombo: result.maxCombo,
+          });
+        }
       }
       raf = requestAnimationFrame(tick);
     };
@@ -333,15 +343,25 @@ export function GameStage({
         <button className="icon-button" onClick={onExit} aria-label="曲選択へ戻る">
           <ArrowLeft size={20} />
         </button>
+        <div className="game-jacket">
+          <Jacket song={song} />
+        </div>
         <div className="game-song">
           <b>{song.title}</b>
           <span>
             {chart.difficulty.toUpperCase()} / LV.{chart.level}
           </span>
         </div>
+        <img
+          className="game-logo"
+          src="/assets/ui/hand-beat-logo-v3.webp"
+          alt="Hand Beat"
+          width="210"
+          height="70"
+        />
         <div className="game-score">
           <small>SCORE / LIVE SESSION</small>
-          <b>{hud.score.toLocaleString().padStart(7, '0')}</b>
+          <b>{String(hud.score).padStart(7, '0')}</b>
         </div>
         <button
           className="icon-button"
@@ -386,6 +406,29 @@ export function GameStage({
           aria-label="カメラ映像"
         />
         <canvas ref={canvas} aria-label="ノーツと判定サークル" />
+        {screen === 'playing' && (
+          <>
+            <aside className="live-stats" aria-label="プレイ状況">
+              <div>
+                <span>ACCURACY</span>
+                <b>
+                  {hud.accuracy.toFixed(1)}
+                  <small>%</small>
+                </b>
+              </div>
+              <div>
+                <span>MAX COMBO</span>
+                <b>{hud.maxCombo}</b>
+              </div>
+            </aside>
+            <div className="live-track-time">
+              {Math.floor(Math.max(0, hud.time) / 60000)}:
+              {String(Math.floor(Math.max(0, hud.time) / 1000) % 60).padStart(2, '0')} /{' '}
+              {Math.floor(chart.durationMs / 60000)}:
+              {String(Math.floor(chart.durationMs / 1000) % 60).padStart(2, '0')}
+            </div>
+          </>
+        )}
         {screen === 'playing' && hud.combo > 1 && (
           <div className="combo-display">
             <b>{hud.combo}</b>
@@ -409,7 +452,7 @@ export function GameStage({
               {cameraState === 'ready' ? (
                 <span className="status-pill">
                   <i />
-                  {handCount} HANDS DETECTED
+                  {handCount > 0 ? '手を認識中' : '手を映してください'}
                 </span>
               ) : practice ? (
                 <span className="status-pill">操作体験モード</span>
@@ -511,7 +554,7 @@ export function GameStage({
           <span className={`live-dot ${practice ? 'practice' : ''}`} />
           {practice
             ? 'PRACTICE · ランキング対象外'
-            : `${handCount} HANDS · ${mirror ? 'MIRROR ON' : 'MIRROR OFF'}`}
+            : `${handCount > 0 ? 'TRACKING ON' : 'CAMERA ON'} · ${mirror ? 'MIRROR ON' : 'MIRROR OFF'}`}
         </span>
         {practice && screen !== 'check' ? (
           <div className="practice-controls">

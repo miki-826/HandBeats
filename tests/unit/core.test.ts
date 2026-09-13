@@ -104,6 +104,8 @@ describe('gesture transitions', () => {
     expect(s.update('fist')).toBeNull();
     s.update(null);
     s.update(null);
+    s.update(null);
+    s.update(null);
     s.update('fist');
     expect(s.update('fist')).toBe('fist');
   });

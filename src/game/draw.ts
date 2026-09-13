@@ -32,6 +32,8 @@ export function drawFrame(
       ctx.save();
       ctx.globalAlpha = Math.min(1, (NOTE_APPROACH_MS - until) / 120);
       ctx.strokeStyle = style.color;
+      ctx.shadowColor = style.color;
+      ctx.shadowBlur = 9;
       ctx.lineWidth = 2;
       ctx.beginPath();
       ctx.arc(x, y, radius * 1.2 * approach, 0, Math.PI * 2);
@@ -43,7 +45,7 @@ export function drawFrame(
       ctx.arc(x, y, radius * 1.2, 0, Math.PI * 2);
       ctx.stroke();
       ctx.restore();
-      ctx.fillStyle = '#101820df';
+      ctx.fillStyle = '#071631ed';
       ctx.lineWidth = 3;
       ctx.beginPath();
       if (note.gesture === 'fist')
@@ -57,6 +59,7 @@ export function drawFrame(
       } else ctx.arc(x, y, radius, 0, Math.PI * 2);
       ctx.fill();
       ctx.stroke();
+      ctx.shadowBlur = 0;
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.font = `${radius * 0.95}px "Segoe UI Emoji",sans-serif`;
@@ -81,10 +84,10 @@ export function drawFrame(
     ctx.fill();
     ctx.font = '600 10px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText(hand.gesture?.toUpperCase() ?? 'HAND', x, y + 29);
+    if (hand.gesture) ctx.fillText(NOTE_STYLE[hand.gesture].label, x, y + 29);
   }
   if (pointer) {
-    ctx.strokeStyle = '#e6f6b0';
+    ctx.strokeStyle = '#b5ecff';
     ctx.lineWidth = 1;
     ctx.beginPath();
     ctx.arc(ox + pointer.x * w, oy + pointer.y * h, 12, 0, Math.PI * 2);
@@ -97,7 +100,9 @@ export function drawFrame(
     ctx.globalAlpha = 1 - age / 650;
     ctx.textAlign = 'center';
     ctx.font = '800 20px Arial';
-    ctx.fillStyle = event.judgement === 'miss' ? '#ff8697' : '#e5ffb2';
+    ctx.fillStyle = event.judgement === 'miss' ? '#ffa3d1' : '#d6f5ff';
+    ctx.shadowColor = event.judgement === 'miss' ? '#b94274' : '#63baff';
+    ctx.shadowBlur = 12;
     ctx.fillText(
       event.judgement.toUpperCase(),
       ox + event.x * w,

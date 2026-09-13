@@ -15,19 +15,19 @@ export const NOTE_STYLE: Record<
   Gesture,
   { icon: string; label: string; sound: string; color: string; instruction: string }
 > = {
-  fist: { icon: '✊', label: 'FIST', sound: 'KICK', color: '#ff657e', instruction: 'グーをつくる' },
+  fist: { icon: '✊', label: 'FIST', sound: 'KICK', color: '#79dfff', instruction: 'グーをつくる' },
   gun: {
     icon: '👉',
     label: 'GUN',
     sound: 'SNARE',
-    color: '#65a8ff',
+    color: '#b49bff',
     instruction: '親指と人差し指を伸ばす',
   },
   open: {
     icon: '✋',
     label: 'OPEN',
     sound: 'HI-HAT',
-    color: '#87edb0',
+    color: '#ffa7ef',
     instruction: '手のひらをひらく',
   },
 };

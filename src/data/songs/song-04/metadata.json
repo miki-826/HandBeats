@@ -5,9 +5,9 @@
   "bpm": 172,
   "durationMs": 154320,
   "audio": "/assets/songs/song-04/audio.m4a",
-  "jacket": "/assets/songs/song-04/jacket.webp",
+  "jacket": "/assets/songs/song-04/banner-v3.webp",
   "previewStartMs": 32000,
-  "color": "#e998ab",
+  "color": "#ad9aff",
   "mood": "自分らしさを鳴らす、力強いビート。",
   "difficulties": {
     "easy": {

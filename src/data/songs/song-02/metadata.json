@@ -5,9 +5,9 @@
   "bpm": 127,
   "durationMs": 157989,
   "audio": "/assets/songs/song-02/audio.m4a",
-  "jacket": "/assets/songs/song-02/jacket.webp",
+  "jacket": "/assets/songs/song-02/banner-v3.webp",
   "previewStartMs": 32000,
-  "color": "#d7ed80",
+  "color": "#c3a6ff",
   "mood": "はじけるビート。リズムで笑顔満開。",
   "difficulties": {
     "easy": {
